@@ -1,0 +1,851 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/*   color de fondo  */
+
+body{
+    background-color: rgb(213, 233, 241);
+}
+
+/* inicio/Portada */
+
+.top{
+    height: 100vh;
+    background-image: url(../img/vete-desenfocada.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+} 
+
+.top-content{
+    padding-inline: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(179, 182, 184, 0.308);
+    text-align: center center;
+}
+
+.top-logo{
+    margin-top: 20px;
+    width: 40%;
+}
+
+.top h1{
+    width: 40%;
+    margin: 20px;
+    color: #fff;
+}
+
+.scroll{
+    margin-bottom: 10px;
+    width: 50px;
+
+}
+
+.animate__shakeY{
+    animation: shakeY;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+
+/* Barra de navegacion */
+
+.encabezado{
+    background-color: rgba(27, 104, 138, 0.50);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: row;
+    padding-inline-start: 15%;
+    padding-inline-end: 15%;
+    position:sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo{
+    margin:5px;
+    width: 150px;
+}
+
+.navbar{
+    display: flex;
+    margin-inline: 10px;
+    width: 100%;
+    justify-content: flex-end;
+    font-size: larger;
+    font-weight:bold;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+li{
+    list-style-type: none;
+}
+
+.menu{
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item a{
+    border-radius: 7.5px;
+    color: #bdd8e4;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.menu-item.dif a{
+    border: 3px solid rgb(243, 178, 118);
+    background-color: rgb(243, 178, 118) ;
+    padding: 30px 5px 30px 5px;
+
+}
+
+.menu-item.dif a:hover,
+.menu-item.active.dif a{
+    background-color: rgb(243, 178, 118);
+    transition: color 0.5s;
+    
+}
+
+.menu-item.active a,
+.menu-item a:hover{
+    background-color: rgb(189, 216, 228);
+    color: rgb(77, 113, 167);
+    transition: background-color 1s, color 0.5s;
+   
+}
+
+/* Redes */
+
+.redes-list{
+    display:flex;
+    flex-direction: column;
+    margin-inline: 5px;
+}
+
+.redes-img{
+    width: 25px;
+}
+
+/* Titulo contenido */
+
+.titulo-pagina h2{
+    margin-left: 15%;
+}
+
+.titulo-pagina{
+    display: flex;
+    padding: 20px;
+    align-items:flex-start;
+    justify-content:flex-start;
+    color: rgb(27, 105, 138);
+    font-size: 25px;
+    background-color: rgba(189, 216, 228);
+    border-bottom: solid 5px #b0d2e29a;
+}
+
+/* Index*/
+
+.contenido{
+    display: flex;
+    width: 83rem;
+    margin-inline: 18rem;
+    background-color: #aacddf;
+    /* background: linear-gradient( #aacddf, #39667e); */
+}
+
+.tarjeta-grid{
+    width: 83rem;
+    margin-inline: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-areas: 
+    "t1 t2 t3 t4"
+    "t5 t5 t6 t6"
+    "t5 t5 t6 t6"
+    ;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    row-gap: 4rem;
+    flex: 1;
+}
+
+.t1{
+    grid-area: t1;
+    background-image: url(/Duran-Bruno-Manuel-33025/img/perrro-vacuna.jpg);
+}
+
+.t2{
+    grid-area: t2;
+    background-image: url(/Duran-Bruno-Manuel-33025/img/ectopills.jpg);
+}
+
+.t3{
+    grid-area: t3;
+    background-image: url(/Duran-Bruno-Manuel-33025/img/image7.jpeg);
+}
+
+.t4{
+    grid-area: t4;
+    background-image: url(/Duran-Bruno-Manuel-33025/img/mascotas.jpg);
+}
+
+.t5{
+    grid-area: t5;
+}
+
+.t6{
+    grid-area: t6;
+    background-image: url(/Duran-Bruno-Manuel-33025/img/image1.jpeg);
+}
+
+.imagen-grid > iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.imagen-grid{
+    display: flex;
+    margin-bottom: 4rem;
+    background-color: #98b9c9;
+    border-radius: 10px;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    align-items: flex-end;
+    flex: 1;
+}
+
+.img-g{
+    width: 1000px;
+}
+
+.tarjeta{
+    display: flex;
+    margin-top: 2rem;
+    background-color: #98b9c9;
+    border-radius: 10px;
+    height: 20rem;
+    background-position: center center;
+    background-size: cover;
+    align-items: flex-end;
+    flex: 1;
+}
+
+.titulo-tarjeta{
+    color: #fff;
+
+    text-align: center;
+}
+
+.tarjeta .linea{
+    align-items: flex-end;
+}
+
+
+.imagen-grid .linea{
+    width: 100%;
+    background: linear-gradient( #5e93b705, #5E94B7 ) ;
+    padding: 100px 5px 10px 5px;
+
+}
+
+.imagen-grid .linea h3{
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.linea{
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient( #5e93b705, #5E94B7 ) ;
+    padding: 100px 5px 10px 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    flex: 1;
+}
+
+.ver{
+    text-decoration: none;
+    text-align: center;
+    margin-right: 5px;
+    padding: 2px 3px;
+    border-radius: 5px;
+    background-color: #d0dee4;
+}
+
+.ver a a:visited{
+    text-decoration: none;
+    color:#39667e;
+}
+
+.linea a:hover{
+    background-color: #39667e;
+    color: #ffffff;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.tarjeta-grid > div{
+    flex: 1;
+}
+
+
+/* formulario */
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+  }
+
+  input, textarea, select{
+    width : 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }  
+
+.formulario{
+    border:solid 2px #39667eb0;
+    background-color: #39667e;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+
+.caja-formulario{
+    display: flex;
+    border: none;
+    padding: 2rem;
+    margin-right: 16rem;
+    gap: 10px;
+}
+
+.columna-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text-form{
+    padding: 2rem;
+    margin-left: 16rem;
+    width: 800px;
+}
+
+.form{
+    width: 625;
+
+}
+
+/* Nosotros */
+
+.nosotros{
+    padding: 20px;
+
+}
+
+.titulo-nosotros{
+    color: rgb(59, 86, 126);
+    margin: 20px;
+    text-align: justify;
+}
+
+.tarjeta-nosotros{
+    background-color: rgba(255, 255, 255, 0.30);
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-template-areas: 
+    "imagen-a   linea-a"
+    "linea-b    imagen-b";
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen-a{
+    grid-area: imagen-a;
+}
+
+.imagen-b{
+    grid-area: imagen-b;
+}
+
+.linea-a{
+    grid-area: linea-a;
+}
+
+.linea-b{
+    grid-area: linea-b;
+}
+
+.img-nosotros-a,
+.img-nosotros-b{
+    width: 100%;
+}
+
+.img-nosotros-a{
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.img-nosotros-b{
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+/* Productos */
+
+.tarjeta-productos{
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5 1fr);
+    grid-template-areas:
+    "tarjeta12 tarjeta12  tarjeta12 tarjeta12"
+    "tarjeta12 tarjeta12  tarjeta12 tarjeta12"
+    "tarjeta12 tarjeta12  tarjeta12 tarjeta12"
+    "tarjeta1  tarjeta1   tarjeta2  tarjeta3"
+    "tarjeta1 tarjeta1  tarjeta4  tarjeta5"
+    "tarjeta6  tarjeta7   tarjeta8  tarjeta9"
+    ;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+}
+
+
+.tarjeta1{
+    grid-area: tarjeta1;
+}
+.tarjeta2{
+    grid-area: tarjeta2;
+}
+.tarjeta3{
+    grid-area: tarjeta3;
+}
+.tarjeta4{
+    grid-area: tarjeta4;
+}
+.tarjet5{
+    grid-area: tarjeta5;
+}
+.tarjeta6{
+    grid-area: tarjeta6;
+}
+.tarjeta7{
+    grid-area: tarjeta7;
+}
+.tarjeta8{
+    grid-area: tarjeta8;
+}
+.tarjeta9{
+    grid-area: tarjeta9;
+}
+.tarjeta10{
+    grid-area: tarjeta10;
+}
+.tarjeta11{
+    grid-area: tarjeta11;
+}
+.tarjeta12{
+    grid-area: tarjeta12;
+}
+
+
+.titulo-prod{
+    color: #fff;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.imagen-prod{
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    flex: 1;
+}
+
+/* Servicios */
+
+.servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 20px;
+    background-color: #5E94B7;
+}
+
+.img-servicios{
+    width: 700px;
+}
+
+.titulo-img{
+    text-align: center;
+    padding-inline: 10%;
+    padding-block: 5%;
+    background-color: #5E94B7;
+    color: #fff;
+}
+
+.tarjeta-servicios{
+    width: 100%;
+    background-color: #78aacc;
+    padding: 20px;
+    border: solid 10px #5E94B7;
+    border-radius: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-template-areas: 
+    "imagen-a   linea-a"
+    "linea-b    imagen-b";
+    align-items: center;
+    justify-content: center;
+}
+
+.linea-b-servicios,
+.linea-a-servicios{
+    padding: 2rem;
+}
+
+
+.titulo-servicios{
+    color: #fff;
+    text-align: justify;
+}
+
+.imagen-a-servicios{
+    grid-area: imagen-a;
+}
+
+.imagen-b-servicios{
+    grid-area: imagen-b;
+}
+
+.linea-a-servicios{
+    grid-area: linea-a;
+    border-top-right-radius: 20px;
+}
+
+.linea-b-servicios{
+    grid-area: linea-b;
+    border-bottom-left-radius: 20px;
+}
+
+.img-servicios-a,
+.img-servicios-b{
+    width: 100%;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+
+/* Contacto */
+
+.contacto{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mapa{
+    background-color: #78aacc;
+    padding: 20px;
+    width: 100%;
+    height: 700px;
+}
+
+.redes-contacto{
+    background-color: #78aacc;
+    padding: 0 170px 0 170px;
+}
+
+.redes-list-contacto{
+    padding: 20px;
+    display: flex;
+    gap: 150px;
+}
+
+.redes-item-contacto a{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.redes-item-contacto{
+    padding:40px;
+    text-align: center;
+
+}
+
+
+.redes-img-contacto{
+    width: 100px;
+    
+}
+
+/* Pie de pagina */
+
+
+
+.pie{
+    display: flex;
+    background-color: #39667e;
+}
+
+.pie h6{
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* @media screen and (max-width 1024px) {
+    
+}
+
+@media screen and (max-width 768px) {
+    
+} */
+/* 
+@media screen and (max-width: 480px) {
+    body{
+        width: 480px;
+        max-width: 480px;
+
+    }
+
+    .top{
+        width: fit-content;
+        height: 800px;
+        background-image: url(../img/vete-desenfocada.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    } 
+    
+    .top-content{
+        width: 100%;
+        padding-inline: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align:center;
+        background-color: rgba(179, 182, 184, 0.308);
+        font-size: 0.5rem;
+    }
+    
+    .top-logo{
+        margin-top: 20px;
+        width: 200px;
+    }
+    
+    .top h1{
+        width: fit-content;
+        margin: 20px;
+        color: #fff;
+    }
+
+    .scroll{
+        width: 30px;
+    }
+
+    .encabezado{
+        background-color: rgba(27, 104, 138, 0.50);
+        display: flex;
+        padding-top: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        padding-inline-start: 15%;
+        padding-inline-end: 15%;
+        position:sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .logo{
+        margin:5px;
+        width: 150px;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        font-size: larger;
+        font-weight:bold;
+    }
+
+    .menu{
+        height: 100%;
+        display: flex;
+        padding: 20px;
+        padding-bottom: 40px;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+        align-items:center;
+    }
+
+    .redes-list{
+        display:flex;
+        flex-direction: row;
+        padding-bottom: 10px;
+        margin-inline: 5px;
+    }
+
+    .contenido{
+        width: 480px;
+        margin: inherit;
+    }
+
+
+
+    .tarjeta-grid{
+        width: 100%;
+        margin-inline: 2rem;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(6 1fr) ;
+        grid-template-areas: 
+        "t1"
+        "t2"
+        "t3"
+        "t4"
+        "t5"
+        "t6"
+        ;
+        align-items: center;
+        justify-content: center;
+        row-gap: 4rem;
+        flex: 1;
+        
+    }
+
+    .imagen-grid > iframe{
+        width: 100%;
+        height: 20rem;
+
+    }
+    
+    .imagen-grid{
+        display: flex;
+        margin-bottom: 4rem;
+        background-color: #98b9c9;
+        border-radius: 10px;
+        height: 100%;
+        background-position: center center;
+        background-size: cover;
+        align-items: center;
+        flex: 1;
+    }
+
+    .t6{
+        align-items: flex-end;
+    }
+    
+    .tarjeta{
+        display: flex;
+        margin-top: inherit;
+        background-color: #98b9c9;
+        border-radius: 10px;
+        height: 20rem;
+        background-position: center center;
+        background-size: cover;
+        align-items: flex-end;
+        flex: 1;
+    }
+    
+    .titulo-tarjeta{
+        color: #fff;
+        text-align: center;
+    }
+    
+    .tarjeta .linea{
+        align-items: flex-end;
+    }
+    
+    
+    .imagen-grid .linea{
+        width: 100%;
+        background: linear-gradient( #5e93b705, #5E94B7 ) ;
+        padding: 100px 5px 10px 5px;
+    
+    }
+    
+    .imagen-grid .linea h3{
+        font-size: inherit;
+        padding: inherit;
+    }
+    
+    .linea{
+        display: flex;
+        justify-content: space-around;
+        background: linear-gradient( #5e93b705, #5E94B7 ) ;
+        padding: 100px 5px 10px 5px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        flex: 1;
+    }
+    
+    .ver{
+        text-decoration: none;
+        text-align: center;
+        margin-right: 5px;
+        padding: 2px 3px;
+        border-radius: 5px;
+        background-color: #d0dee4;
+    }
+
+    
+}
+ */
