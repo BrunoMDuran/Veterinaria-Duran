@@ -175,7 +175,7 @@ li{
 
 .tarjeta-grid{
     width: 83rem;
-    margin-inline: 2rem;
+    padding: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     grid-template-rows: 1fr 1fr 1fr ;
@@ -187,7 +187,7 @@ li{
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    row-gap: 4rem;
+    
     flex: 1;
 }
 
@@ -220,37 +220,29 @@ li{
     background-image: url(/Duran-Bruno-Manuel-33025/img/image1.jpeg);
 }
 
-.imagen-grid > iframe{
-    width: 100%;
-    height: 100%;
-}
-
-.imagen-grid{
-    display: flex;
-    margin-bottom: 4rem;
-    background-color: #98b9c9;
-    border-radius: 10px;
-    height: 100%;
-    background-position: center center;
-    background-size: cover;
-    align-items: flex-end;
-    flex: 1;
-}
-
-.img-g{
-    width: 1000px;
-}
 
 .tarjeta{
     display: flex;
-    margin-top: 2rem;
     background-color: #98b9c9;
     border-radius: 10px;
-    height: 20rem;
+    height: 100%;
     background-position: center center;
     background-size: cover;
     align-items: flex-end;
     flex: 1;
+}
+
+.t1,
+.t2,
+.t3,
+.t4{
+    height: 20rem;
+} 
+
+.tarjeta > iframe{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
 }
 
 .titulo-tarjeta{
@@ -263,17 +255,8 @@ li{
     align-items: flex-end;
 }
 
-
-.imagen-grid .linea{
-    width: 100%;
-    background: linear-gradient( #5e93b705, #5E94B7 ) ;
-    padding: 100px 5px 10px 5px;
-
-}
-
-.imagen-grid .linea h3{
-    font-size: 1.5rem;
-    padding: 0.5rem 1rem 0.5rem 1rem;
+.t6 .linea{
+    font-size: larger;
 }
 
 .linea{
@@ -330,15 +313,25 @@ button, input, select, textarea {
     background-color: #39667e;
     color: #fff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    box-shadow: 7px 7px 25px rgb(58, 58, 58);
 }
 
 .caja-formulario{
     display: flex;
-    border: none;
+    justify-content: center;
+    background-color: #62869e;
+    width: 62rem;
+    border: none ;
     padding: 2rem;
-    margin-right: 16rem;
-    gap: 10px;
+   
 }
 
 .form-item textarea{
@@ -359,6 +352,8 @@ button, input, select, textarea {
 
 .grid-form{
     display: grid;
+    align-items: center;
+    justify-content: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4 1fr);
     grid-template-areas:
@@ -367,7 +362,8 @@ button, input, select, textarea {
     "telefono   consulta "
     "tcons      enviar"
     ;
-    gap: 10px;
+    gap: 5px;
+    column-gap: 20px;
 }
 
 .na{
@@ -389,18 +385,10 @@ button, input, select, textarea {
     grid-area: enviar;
 }
 
-
-
 .text-form{
     padding: 2rem;
-    margin-left: 16rem;
-    width: 800px;
 }
 
-.form{
-    width: 625;
-
-}
 
 /* Nosotros */
 
@@ -687,7 +675,6 @@ button, input, select, textarea {
     body{
         width: 480px;
         max-width: 480px;
-
     }
 
     .top{
@@ -695,25 +682,10 @@ button, input, select, textarea {
         height: 100vh;
         background-image: url(../img/vete-desenfocada.jpg);
         background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
     } 
     
     .top-content{
         width: 100%;
-        padding-inline: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align:center;
-        background-color: rgba(179, 182, 184, 0.308);
         font-size: 0.5rem;
     }
     
@@ -733,64 +705,59 @@ button, input, select, textarea {
     }
 
     .encabezado{
-        background-color: rgba(27, 104, 138, 0.50);
-        display: flex;
-        padding-top: 20px;
+        padding-top: 10px;
         flex-direction: column;
-        justify-content: center;
-        align-items:center;
-        padding-inline-start: 15%;
-        padding-inline-end: 15%;
-        position:sticky;
-        top: 0;
-        z-index: 1;
-    }
-
-    .logo{
-        margin:5px;
-        width: 150px;
     }
 
     .navbar{
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
+        gap: 5px;
         font-size: larger;
-        font-weight:bold;
+    }
+
+    .logo-imagen{
+        margin:inherit;
+        width: 100px;
     }
 
     .menu{
         height: 100%;
-        display: flex;
-        padding: 20px;
-        padding-bottom: 40px;
+        padding: 5px;
         flex-direction: column;
-        gap: 50px;
-        justify-content: center;
-        align-items:center;
+        gap: 10px;
+    }
+
+    .menu-item a{
+        font-size: small;
+        padding: 5px;
+    }
+
+    .menu-item.dif a{
+        border: inherit;
+        padding: 5px;
+    
     }
 
     .redes-list{
-        display:flex;
         flex-direction: row;
-        padding-bottom: 10px;
-        margin-inline: 5px;
     }
 
+    .titulo-pagina{
+        justify-content: center;
+    }
+    
+    .titulo-pagina h2{
+        margin-left: inherit;
+    }
+
+
     .contenido{
-        width: 480px;
+        width: 100%;
         margin: inherit;
     }
 
-
-
     .tarjeta-grid{
-        width: 100%;
-        margin-inline: 2rem;
-        display: grid;
         grid-template-columns: 1fr ;
         grid-template-rows: repeat(6 1fr) ;
         grid-template-areas: 
@@ -803,27 +770,9 @@ button, input, select, textarea {
         ;
         align-items: center;
         justify-content: center;
-        row-gap: 4rem;
+        row-gap: 2rem;
         flex: 1;
         
-    }
-
-    .imagen-grid > iframe{
-        width: 100%;
-        height: 20rem;
-
-    }
-    
-    .imagen-grid{
-        display: flex;
-        margin-bottom: 4rem;
-        background-color: #98b9c9;
-        border-radius: 10px;
-        height: 100%;
-        background-position: center center;
-        background-size: cover;
-        align-items: center;
-        flex: 1;
     }
 
     .t6{
@@ -831,14 +780,8 @@ button, input, select, textarea {
     }
     
     .tarjeta{
-        display: flex;
+        height: 18rem;
         margin-top: inherit;
-        background-color: #98b9c9;
-        border-radius: 10px;
-        height: 20rem;
-        background-position: center center;
-        background-size: cover;
-        align-items: flex-end;
         flex: 1;
     }
     
@@ -846,34 +789,72 @@ button, input, select, textarea {
         color: #fff;
         text-align: center;
     }
-    
-    .tarjeta .linea{
-        align-items: flex-end;
-    }
-    
-    
-    .imagen-grid .linea{
-        width: 100%;
-        background: linear-gradient( #5e93b705, #5E94B7 ) ;
-        padding: 100px 5px 10px 5px;
-    
-    }
-    
-    .imagen-grid .linea h3{
-        font-size: larger;
-    }
-    
-/*     .linea{
-    } */
-    
-    .ver{
-        text-decoration: none;
-        text-align: center;
-        margin-right: 5px;
-        padding: 2px 3px;
-        border-radius: 5px;
-        background-color: #d0dee4;
+
+
+    .linea h3{
+        margin-left:10px ;
     }
 
+    .tarjeta .linea{
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .t6 .linea{
+        font-size: inherit;
+    }
+    
+    .ver{
+        margin: inherit;
+        padding: 5px;
+        margin-right: 10px;
+    }
+
+    /* formulario */
+
+
+    .grid-form{
+        grid-template-areas:
+        "nombre     consulta"
+        "email      consulta"
+        "telefono   consulta "
+        "tcons      enviar"
+        ;
+        row-gap: 5px;
+    }
+
+
+    .formulario{
+        flex-direction: column;
+    }
+
+    .caja-formulario{
+        width: 25rem;
+        margin-right:inherit;
+    }
+
+    .text-form{
+        text-align: justify;
+        font-size: 1rem;
+        padding-bottom: 1rem;
+        margin-left: inherit;
+        width: 100%;
+    }
+
+    .form-item textarea{
+        padding: 0.25rem;
+        border-radius: 5px;
+    
+    }
+    
+    .form-item input {
+        padding: 0.25rem;
+        border-radius: 5px;
+    }
+    
+    .form-item select{
+        padding: 0.25rem;
+        border-radius: 5px;
+    }
     
 }
