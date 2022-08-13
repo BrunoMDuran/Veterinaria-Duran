@@ -27,30 +27,38 @@
 
    <span><a id="inicio"></a></span>
     <header class="encabezado">
-        <a href="../Duran-Bruno-Manuel-33025/index.html">
-            <img class="logo" src="./img/vete-logo.png" alt="Logo Veterinaria Duran">
-        </a>     
+   
         <nav class="navbar">
+
+            <div class="logo">
+                <a href="../Duran-Bruno-Manuel-33025/index.html">
+                    <img class="logo-imagen" src="./img/vete-logo.png" alt="Logo Veterinaria Duran">
+                </a> 
+            </div>
+
             <ul class="menu">
+
                 <li class="menu-item active">
                     <a href="#inicio">Inicio</a>
                 </li>
+
                 <li class="menu-item">
                     <a href="./pages/nosotros.html">Nosotros</a>
                 </li>
+
                 <li class="menu-item">
                     <a href="./pages/productos.html">Productos</a>
                 </li>
+
                 <li class="menu-item">
                     <a href="./pages/servicios.html">Servicios</a>
                 </li>
+
                 <li class="menu-item dif">
                     <a href="./pages/contacto.html">Contacto</a>
                 </li>
-            </ul>
-            
 
-<!-- Redes sociales/contacto -->
+                <!-- Redes sociales/contacto -->
 
                 <div class="redes">
                     <ul class="redes-list">   
@@ -59,6 +67,7 @@
                         <li class="redes-item"><a target="_blank" href="https://web.whatsapp.com/"><img class="redes-img"  src="./img/icons8-whatsapp-50.png" alt="whatsapp"></a></li>
                     </ul>
                 </div>
+            </ul> 
         </nav>
     </header>
 
@@ -72,6 +81,7 @@
 <!-- Contenido Inicio -->    
 
     <section class="contenido">
+        
         <div class="tarjeta-grid"> 
 
             <div class="tarjeta t1">
@@ -123,34 +133,37 @@
             <form class="form" action="input">
                 <fieldset class="caja-formulario">
 
-                    <div class="columna-form">
-                        <div class="na">
+                    <div class="grid-form">
+
+                        <div class="form-item na">
                             <label for="NombreApellido" class="form-label">Nombre y apellido*</label>
                             <input name="NombreApellido" type="text" placeholder="ej. Bruno Duran">
                         </div>
-                        <div class="mail">
+
+                        <div class="form-item mail">
                             <label for="email" class="form-label">Email</label>
                             <input name="email" type="email" placeholder="Mail*">
                         </div>
-                        <div class="tel">
+
+                        <div class="form-item tel">
                             <label for="telefono" class="form-label">Telefono</label>
                             <input name="telefono" type="text" placeholder="+54 123-123456">
                         </div>
-                        <div class="tcons">
+
+                        <div class="form-item tcons">
                             <label for="tconsulta" class="form-label">Tipo de consulta</label>
                             <select name="tconsulta" id="tcons">
                                 <option value="cons1">Consulta Perro</option>
                                 <option value="cons2">Consulta Gato</option>
                             </select>
                         </div>
-                    </div>
-                    
-                    <div class="fila-form">
-                        <div class="cons">
+            
+                        <div class="form-item cons">
                             <label for="consulta" class="form-label">Consulta</label>
                             <textarea name="consulta" id="cons" cols="30" rows="10"></textarea>
                         </div>
-                        <div class="env">
+
+                        <div class="form-item env">
                             <label for="enviar">*oblgatorio</label>
                             <input type="submit" name="enviar" value="Enviar">
                         </div>

@@ -10,6 +10,7 @@
 html{
     scroll-behavior: smooth;
 }
+
 /*   color de fondo  */
 
 body{
@@ -22,42 +23,36 @@ body{
     height: 100vh;
     background-image: url(../img/vete-desenfocada.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-attachment: fixed;
     background-position: center center;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
-    text-align: center;
 } 
 
 .top-content{
-    padding-inline: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
     background-color: rgba(179, 182, 184, 0.308);
-    text-align: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;  
 }
 
 .top-logo{
-    margin-top: 20px;
-    width: 40%;
+    margin-top: 1rem;
+    width: 40rem;
 }
 
 .top h1{
-    width: 40%;
-    margin: 20px;
+    width: 40rem;
+    margin: 1rem;
     color: #fff;
 }
 
 .scroll{
     margin-bottom: 10px;
-    width: 50px;
-
+    width: 3rem;
 }
 
 .animate__shakeY{
@@ -71,32 +66,29 @@ body{
 /* Barra de navegacion */
 
 .encabezado{
-    background-color: rgba(27, 104, 138, 0.50);
+    background-color: #1b688a80;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     flex-direction: row;
-    padding-inline-start: 15%;
-    padding-inline-end: 15%;
     position:sticky;
     top: 0;
     z-index: 1;
 }
 
-.logo{
+.logo-imagen{
     margin:5px;
     width: 150px;
 }
 
 .navbar{
     display: flex;
-    margin-inline: 10px;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: center;
     font-size: larger;
     font-weight:bold;
     align-items: center;
-    justify-content: flex-end;
+    gap: 35rem;
 }
 
 li{
@@ -107,7 +99,6 @@ li{
     height: 100%;
     display: flex;
     gap: 10px;
-    grid-gap: 10px;
     justify-content: center;
     align-items: center;
 }
@@ -146,7 +137,7 @@ li{
 .redes-list{
     display:flex;
     flex-direction: column;
-    margin-inline: 5px;
+    margin-inline: 0.25rem
 }
 
 .redes-img{
@@ -155,19 +146,21 @@ li{
 
 /* Titulo contenido */
 
-.titulo-pagina h2{
-    margin-left: 15%;
-}
-
 .titulo-pagina{
     display: flex;
     padding: 20px;
-    align-items:flex-start;
+    align-items: center;
     justify-content:flex-start;
     color: rgb(27, 105, 138);
-    font-size: 25px;
+    font-size: 1.75rem;
     background-color: rgba(189, 216, 228);
-    border-bottom: solid 5px #b0d2e29a;
+    text-shadow: #39667e;
+    box-shadow: 5px 5px #b0d2e2e0;
+}
+
+.titulo-pagina h2{
+    margin-left: 17rem;
+    text-shadow: 3px 3px #72b2cf9a;
 }
 
 /* Index*/
@@ -337,7 +330,7 @@ button, input, select, textarea {
     background-color: #39667e;
     color: #fff;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .caja-formulario{
@@ -348,11 +341,55 @@ button, input, select, textarea {
     gap: 10px;
 }
 
-.columna-form{
-    display: flex;
-    flex-direction: column;
+.form-item textarea{
+    padding: 0.5rem;
+    border-radius: 5px;
+
+}
+
+.form-item input {
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.form-item select{
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.grid-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4 1fr);
+    grid-template-areas:
+    "nombre     consulta"
+    "email      consulta"
+    "telefono   consulta "
+    "tcons      enviar"
+    ;
     gap: 10px;
 }
+
+.na{
+    grid-area: nombre;
+}
+.mail{
+    grid-area: email;
+}
+.tel{
+    grid-area: telefono;
+}
+.tcons{
+    grid-area: tcons;
+}
+.cons{
+    grid-area: consulta;
+}
+.env{
+    grid-area: enviar;
+}
+
+
 
 .text-form{
     padding: 2rem;
@@ -645,7 +682,7 @@ button, input, select, textarea {
 @media screen and (max-width 768px) {
     
 } */
-/* 
+
 @media screen and (max-width: 480px) {
     body{
         width: 480px;
@@ -655,7 +692,7 @@ button, input, select, textarea {
 
     .top{
         width: fit-content;
-        height: 800px;
+        height: 100vh;
         background-image: url(../img/vete-desenfocada.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -823,19 +860,11 @@ button, input, select, textarea {
     }
     
     .imagen-grid .linea h3{
-        font-size: inherit;
-        padding: inherit;
+        font-size: larger;
     }
     
-    .linea{
-        display: flex;
-        justify-content: space-around;
-        background: linear-gradient( #5e93b705, #5E94B7 ) ;
-        padding: 100px 5px 10px 5px;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        flex: 1;
-    }
+/*     .linea{
+    } */
     
     .ver{
         text-decoration: none;
@@ -848,4 +877,3 @@ button, input, select, textarea {
 
     
 }
- */
