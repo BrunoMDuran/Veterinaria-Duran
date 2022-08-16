@@ -56,61 +56,69 @@
     <section class="titulo-pagina">
         <h2>Contacto</h2>
     </section>
-    <section class="contenido">
-        <div class="contacto">
-            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.3007822693403!2d-57.555993984142745!3d-37.99344415212028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d841e5b021a7%3A0xe09908410384ae4!2sVeterinaria%20Dur%C3%A1n!5e0!3m2!1ses-419!2sar!4v1659562329461!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="redes-contacto">
-                <ul class="redes-list-contacto">   
-                    <li class="redes-item-contacto"><a target="_blank" href="https://www.instagram.com/veterinariaduran/?hl=es"><img class="redes-img-contacto"  src="../img/icons8-instagram-50.png" alt=""><h4 class="titulo">@veterinariaduran</h4> </a></li> 
-                    <li class="redes-item-contacto"><a target="_blank" href="https://www.facebook.com/veterinaria.duran.9"><img class="redes-img-contacto"  src="../img/icons8-facebook-nuevo-50.png" alt=""><h4 class="titulo"> Veterinaria Durán</h4></a></li>
-                    <li class="redes-item-contacto"><a target="_blank" href="https://web.whatsapp.com/"><img class="redes-img-contacto"  src="../img/icons8-whatsapp-50.png" alt="whatsapp"><h4 class="titulo">+54 223 123-4567</h4></a></li>
-                </ul>
-            </div>
-            <section class="formulario">
+
+    <section class="contenido-flex">
+        <section class="contenido">
+            <div class="contacto">
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.3007822693403!2d-57.555993984142745!3d-37.99344415212028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d841e5b021a7%3A0xe09908410384ae4!2sVeterinaria%20Dur%C3%A1n!5e0!3m2!1ses-419!2sar!4v1659562329461!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="redes-contacto">
+                    <ul class="redes-list-contacto">   
+                        <li class="redes-item-contacto"><a target="_blank" href="https://www.instagram.com/veterinariaduran/?hl=es"><img class="redes-img-contacto"  src="../img/icons8-instagram-50.png" alt=""><h4 class="titulo">@veterinariaduran</h4> </a></li> 
+                        <li class="redes-item-contacto"><a target="_blank" href="https://www.facebook.com/veterinaria.duran.9"><img class="redes-img-contacto"  src="../img/icons8-facebook-nuevo-50.png" alt=""><h4 class="titulo"> Veterinaria Durán</h4></a></li>
+                        <li class="redes-item-contacto"><a target="_blank" href="https://web.whatsapp.com/"><img class="redes-img-contacto"  src="../img/icons8-whatsapp-50.png" alt="whatsapp"><h4 class="titulo">+54 223 123-4567</h4></a></li>
+                    </ul>
+                </div>
+                <section class="formulario">
             
-                <h3 class="text-form">Cualquier duda o consulta que tenga nos la hace llegar mediante el formulario de contacto, muchas gracias, saludos Veterinaria Duran.</h3>
-    
-                <form class="form" action="input">
-                    <fieldset class="caja-formulario">
-    
-                        <div class="columna-form">
-                            <div class="na">
-                                <label for="NombreApellido" class="form-label">Nombre y apellido*</label>
-                                <input name="NombreApellido" type="text" placeholder="ej. Bruno Duran">
-                            </div>
-                            <div class="mail">
-                                <label for="email" class="form-label">Email</label>
-                                <input name="email" type="email" placeholder="Mail*">
-                            </div>
-                            <div class="tel">
-                                <label for="telefono" class="form-label">Telefono</label>
-                                <input name="telefono" type="text" placeholder="+54 123-123456">
-                            </div>
-                            <div class="tcons">
-                                <label for="tconsulta" class="form-label">Tipo de consulta</label>
-                                <select name="tconsulta" id="tcons">
-                                    <option value="cons1">Consulta Perro</option>
-                                    <option value="cons2">Consulta Gato</option>
-                                </select>
-                            </div>
-                        </div>
-                        
-                        <div class="fila-form">
-                            <div class="cons">
-                                <label for="consulta" class="form-label">Consulta</label>
-                                <textarea name="consulta" id="cons" cols="30" rows="10"></textarea>
-                            </div>
-                            <div class="env">
-                                <label for="enviar">*oblgatorio</label>
-                                <input type="submit" name="enviar" value="Enviar">
-                            </div>
-                        </div> 
-                    </fieldset>
-                </form>
-            </section>   
-        </div>
+                    <h3 class="text-form">Cualquier duda o consulta que tenga nos la hace llegar mediante el formulario de contacto, muchas gracias, saludos Veterinaria Duran.</h3>
         
+                    <form class="form" action="input">
+                        <fieldset class="caja-formulario">
+        
+                            <div class="grid-form">
+        
+                                <div class="form-item na">
+                                    <label for="NombreApellido" class="form-label">Nombre y apellido*</label>
+                                    <input name="NombreApellido" type="text" placeholder="ej. Bruno Duran">
+                                </div>
+        
+                                <div class="form-item mail">
+                                    <label for="email" class="form-label">Email*</label>
+                                    <input name="email" type="email" placeholder="Mail">
+                                </div>
+        
+                                <div class="form-item tel">
+                                    <label for="telefono" class="form-label">Telefono</label>
+                                    <input name="telefono" type="text" placeholder="+54 123-123456">
+                                </div>
+        
+                                <div class="form-item tcons">
+                                    <label for="tconsulta" class="form-label">Tipo de consulta</label>
+                                    <select name="tconsulta" id="tcons">
+                                        <option value="cons0">Otros</option>
+                                        <option value="cons1">Consulta Perro</option>
+                                        <option value="cons2">Consulta Gato</option>
+                                    </select>
+                                </div>
+                    
+                                <div class="form-item cons">
+                                    <label for="consulta" class="form-label">Consulta*</label>
+                                    <textarea name="consulta" id="cons" cols="20" rows="9"></textarea>
+                                </div>
+        
+                                <div class="form-item env">
+                                    <label for="enviar">*Oblgatorio</label>
+                                    <input type="submit" name="enviar" value="Enviar">
+                                </div>
+                            </div> 
+                        </fieldset>
+                    </form>
+                </section>   
+            </div>
+            
+        </section>
     </section>
+
     <footer class="pie">
         <h6>© Copy 2022</h6>
     </footer>

@@ -84,14 +84,14 @@ body{
 .navbar{
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: space-around;
     font-size: larger;
     font-weight:bold;
     align-items: center;
-    gap: 35rem;
+
 }
 
-li{
+.navbar li{
     list-style-type: none;
 }
 
@@ -153,7 +153,7 @@ li{
     justify-content:flex-start;
     color: rgb(27, 105, 138);
     font-size: 1.75rem;
-    background-color: rgba(189, 216, 228);
+    background-color: #bdd8e4;
     text-shadow: #39667e;
     box-shadow: 5px 5px #b0d2e2e0;
 }
@@ -165,16 +165,21 @@ li{
 
 /* Index*/
 
+.contenido-flex{
+    display: flex;
+    justify-content: center;
+}
+
 .contenido{
     display: flex;
+    flex-direction: column;
     width: 83rem;
-    margin-inline: 18rem;
     background-color: #aacddf;
-    /* background: linear-gradient( #aacddf, #39667e); */
+
 }
 
 .tarjeta-grid{
-    width: 83rem;
+    width: 100%;
     padding: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
@@ -273,8 +278,9 @@ li{
     text-decoration: none;
     text-align: center;
     margin-right: 5px;
-    padding: 2px 3px;
+    padding: 3px;
     border-radius: 5px;
+    color: #39667e;
     background-color: #d0dee4;
 }
 
@@ -336,18 +342,18 @@ button, input, select, textarea {
 
 .form-item textarea{
     padding: 0.5rem;
-    border-radius: 5px;
+   
 
 }
 
 .form-item input {
     padding: 0.5rem;
-    border-radius: 5px;
+  
 }
 
 .form-item select{
     padding: 0.5rem;
-    border-radius: 5px;
+  
 }
 
 .grid-form{
@@ -362,8 +368,8 @@ button, input, select, textarea {
     "telefono   consulta "
     "tcons      enviar"
     ;
-    gap: 5px;
-    column-gap: 20px;
+    gap: 0.5rem;
+    column-gap: 3rem;
 }
 
 .na{
@@ -386,6 +392,7 @@ button, input, select, textarea {
 }
 
 .text-form{
+    text-align: center;
     padding: 2rem;
 }
 
@@ -399,14 +406,13 @@ button, input, select, textarea {
 
 .titulo-nosotros{
     color: rgb(59, 86, 126);
-    margin: 20px;
+    padding: 1rem 4rem;
     text-align: justify;
+    line-height: 2rem;
 }
 
 .tarjeta-nosotros{
-    background-color: rgba(255, 255, 255, 0.30);
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.082);
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -417,6 +423,8 @@ button, input, select, textarea {
     "linea-b    imagen-b";
     align-items: center;
     justify-content: center;
+    gap: 1rem;
+    flex: 1;
 }
 
 .imagen-a{
@@ -440,15 +448,6 @@ button, input, select, textarea {
     width: 100%;
 }
 
-.img-nosotros-a{
-    border-bottom-left-radius: 30px;
-    border-top-left-radius: 30px;
-}
-
-.img-nosotros-b{
-    border-bottom-right-radius: 30px;
-    border-top-right-radius: 30px;
-}
 
 /* Productos */
 
@@ -456,63 +455,71 @@ button, input, select, textarea {
     padding: 25px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(5 1fr);
+    grid-template-rows: repeat(8 1fr);
     grid-template-areas:
-    "tarjeta12 tarjeta12  tarjeta12 tarjeta12"
-    "tarjeta12 tarjeta12  tarjeta12 tarjeta12"
-    "tarjeta12 tarjeta12  tarjeta12 tarjeta12"
-    "tarjeta1  tarjeta1   tarjeta2  tarjeta3"
-    "tarjeta1 tarjeta1  tarjeta4  tarjeta5"
-    "tarjeta6  tarjeta7   tarjeta8  tarjeta9"
+    "prod12 prod12  prod12 prod12"
+    "prod12 prod12  prod12 prod12"
+    "prod12 prod12  prod12 prod12"
+    "prod1  prod1   prod2  prod3"
+    "prod1  prod1   prod4  prod5"
+    "prod6  prod7   prod8  prod9"
+    "prod10 prod10  prod11 prod11"
+    "prod10 prod10  prod11 prod11"
     ;
     align-items:center;
     justify-content: center;
     text-align: center;
     flex: 1;
+    gap: 2rem;
 }
 
+.prod{
+    margin: 1rem;
+    background-color:#62869e;
+    border-radius: 1rem;
+}
 
-.tarjeta1{
-    grid-area: tarjeta1;
+.prod1{
+    grid-area: prod1;
 }
-.tarjeta2{
-    grid-area: tarjeta2;
+.prod2{
+    grid-area: prod2;
 }
-.tarjeta3{
-    grid-area: tarjeta3;
+.prod3{
+    grid-area: prod3;
 }
-.tarjeta4{
-    grid-area: tarjeta4;
+.prod4{
+    grid-area: prod4;
 }
-.tarjet5{
-    grid-area: tarjeta5;
+.prod5{
+    grid-area: prod5;
 }
-.tarjeta6{
-    grid-area: tarjeta6;
+.prod6{
+    grid-area: prod6;
 }
-.tarjeta7{
-    grid-area: tarjeta7;
+.prod7{
+    grid-area: prod7;
 }
-.tarjeta8{
-    grid-area: tarjeta8;
+.prod8{
+    grid-area: prod8;
 }
-.tarjeta9{
-    grid-area: tarjeta9;
+.prod9{
+    grid-area: prod9;
 }
-.tarjeta10{
-    grid-area: tarjeta10;
+.prod10{
+    grid-area: prod10;
 }
-.tarjeta11{
-    grid-area: tarjeta11;
+.prod11{
+    grid-area: prod11;
 }
-.tarjeta12{
-    grid-area: tarjeta12;
+.prod12{
+    grid-area: prod12;
 }
 
 
 .titulo-prod{
     color: #fff;
-    margin-top: 5px;
+    margin: 0.5rem;
     text-align: center;
 }
 
@@ -528,6 +535,7 @@ button, input, select, textarea {
 /* Servicios */
 
 .servicios{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -553,7 +561,7 @@ button, input, select, textarea {
     background-color: #78aacc;
     padding: 20px;
     border: solid 10px #5E94B7;
-    border-radius: 40px;
+    border-radius: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -563,11 +571,13 @@ button, input, select, textarea {
     "linea-b    imagen-b";
     align-items: center;
     justify-content: center;
+    gap: 1rems;
 }
 
 .linea-b-servicios,
 .linea-a-servicios{
     padding: 2rem;
+    line-height: 2rem;
 }
 
 
@@ -586,19 +596,35 @@ button, input, select, textarea {
 
 .linea-a-servicios{
     grid-area: linea-a;
-    border-top-right-radius: 20px;
+    border-top-right-radius: 5px;
 }
 
 .linea-b-servicios{
     grid-area: linea-b;
-    border-bottom-left-radius: 20px;
+    border-bottom-left-radius: 5px;
 }
 
 .img-servicios-a,
 .img-servicios-b{
     width: 100%;
-    border-radius: 40px;
-    padding: 20px;
+    border-radius: 15px;
+    padding: 0.5rem;
+
+}
+
+.titulo-servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-servicios li{
+    list-style-type: disc;
+    line-height: 3rem;
+}
+
+.linea-servicios{
+    font-size: 1.25rem;
 }
 
 
@@ -611,21 +637,29 @@ button, input, select, textarea {
 }
 
 .mapa{
-    background-color: #78aacc;
+    background: linear-gradient(#bdd8e4 ,#39667e);
     padding: 20px;
     width: 100%;
     height: 700px;
 }
 
 .redes-contacto{
-    background-color: #78aacc;
-    padding: 0 170px 0 170px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color:#39667e;
+
+}
+
+.redes-contacto li{
+    list-style: none;
 }
 
 .redes-list-contacto{
+    justify-content: space-around;
+    align-items: center;
     padding: 20px;
     display: flex;
-    gap: 150px;
 }
 
 .redes-item-contacto a{
@@ -663,13 +697,195 @@ button, input, select, textarea {
     justify-content: center;
 }
 
-/* @media screen and (max-width 1024px) {
+@media screen and (max-width: 1800px) {
+    .titulo-pagina{
+        justify-content:center;
+    }
     
+    .titulo-pagina h2{
+        margin-left: inherit;
+    }
+
 }
 
-@media screen and (max-width 768px) {
+
+@media screen and (max-width: 1024px) {
+    body{
+        width: 1024px;
+        max-width: 1024px;
+    }
+
+    .top{
+        width:1024px;
+    } 
     
-} */
+    .top-content{
+        width: 100%;
+        font-size: 0.85rem;
+    }
+    
+    .top-logo{
+        margin-top: 20px;
+        width: 350px;
+    }
+
+    .titulo-pagina{
+        justify-content: center;
+    }
+    
+    .titulo-pagina h2{
+        margin-left: inherit;
+    }
+
+    .caja-formulario{
+        width: 45rem;
+        margin-right:inherit;
+    }
+
+    .titulo-nosotros{
+        line-height: 1.5rem;
+        padding-inline: 1rem;
+    }
+
+    .titulo-servicios li{
+        list-style-type: disc;
+        line-height: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+   
+    body{
+        width: 768px;
+        max-width: 768px;
+    }
+
+    .top{
+        width:768px;
+    } 
+    
+    .top-content{
+        width: 100%;
+        font-size: 0.75rem;
+    }
+    
+    .top-logo{
+        margin-top: 20px;
+        width: 300px;
+    }
+    
+    .top h1{
+        width: fit-content;
+        margin: 20px;
+        color: #fff;
+    }
+
+    .scroll{
+        width: 30px;
+    }
+
+    .encabezado{
+        padding-top: 10px;
+        flex-direction: column;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        font-size: larger;
+    }
+
+    .logo-imagen{
+        margin:inherit;
+        width: 100px;
+    }
+
+    .menu{
+        height: 100%;
+        padding: 5px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu-item a{
+        font-size: large;
+        padding: 5px;
+    }
+
+    .menu-item.dif a{
+        border: inherit;
+        padding: 5px;
+    
+    }
+
+    .redes-list{
+        flex-direction: row;
+    }
+
+    .titulo-pagina{
+        justify-content: center;
+    }
+    
+    .titulo-pagina h2{
+        margin-left: inherit;
+    }
+
+
+    .contenido{
+        width: 100%;
+        margin: inherit;
+    }
+
+    .tarjeta-grid{
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: repeat(3 1fr) ;
+        grid-template-areas: 
+        "t1 t2"
+        "t3 t4"
+        "t5 t6"
+        ;
+        align-items: center;
+        justify-content: center;
+        row-gap: 2rem;
+        flex: 1;
+        
+    }
+
+    .linea h3{
+        font-size: 1rem;
+    }
+
+    .caja-formulario{
+        width: 35rem;
+        margin-right:inherit;
+    }
+
+    .tarjeta-nosotros{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tarjeta-productos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(12 1fr);
+        grid-template-areas:
+        "prod12 prod12"
+        "prod12 prod12"
+        "prod1  prod1"
+        "prod1  prod1"
+        "prod10 prod10"
+        "prod10 prod10"
+        "prod6  prod7"
+        "prod2  prod3"
+        "prod4  prod5"
+        "prod8  prod9"
+        "prod11 prod11"
+        "prod11 prod11"
+        ;
+    }
+} 
 
 @media screen and (max-width: 480px) {
     body{
@@ -834,7 +1050,6 @@ button, input, select, textarea {
     }
 
     .text-form{
-        text-align: justify;
         font-size: 1rem;
         padding-bottom: 1rem;
         margin-left: inherit;
@@ -857,4 +1072,43 @@ button, input, select, textarea {
         border-radius: 5px;
     }
     
+    .tarjeta-productos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tarjeta-servicios{
+        display: flex;
+        flex-direction: column;
+        gap: 1rems;
+        border-radius: inherit;
+    }
+
+    .img-servicios-a,
+    .img-servicios-b{
+        border-radius: inherit;
+        padding: inherit;
+    }
+
+    .servicios{
+        max-width: 480px;
+    }
+
+    .servicios img{
+        width: 100%;
+    }
+
+    .servicios h2{
+        font-size: 1.25rem;
+    }
+
+    .mapa{
+        height: 500px;
+    }
+
+    .redes-list-contacto{
+        flex-direction: column;
+    }
+
+
 }
