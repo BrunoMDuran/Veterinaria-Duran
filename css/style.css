@@ -743,8 +743,8 @@ button, input, select, textarea {
     }
 
     .titulo-nosotros{
-        line-height: 1.5rem;
-        padding-inline: 1rem;
+        line-height: 1.75rem;
+        padding-inline: 1.75rem;
     }
 
     .titulo-servicios li{
@@ -867,6 +867,12 @@ button, input, select, textarea {
         flex-direction: column;
     }
 
+    .titulo-nosotros{
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        padding-inline: 1.75rem;
+    }
+
     .tarjeta-productos{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(12 1fr);
@@ -884,6 +890,10 @@ button, input, select, textarea {
         "prod11 prod11"
         "prod11 prod11"
         ;
+    }
+
+    .titulo-prod{
+        font-size: 1.25rem;
     }
 } 
 
