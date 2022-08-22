@@ -125,7 +125,7 @@ ul.menu{
 .menu-item.dif a:hover,
 .menu-item.active.dif a{
     background-color: rgb(243, 178, 118);
-    transition: color 0.5s;
+    transition: color 0.75s;
     
 }
 
@@ -133,8 +133,7 @@ ul.menu{
 .menu-item a:hover{
     background-color: rgb(189, 216, 228);
     color: rgb(77, 113, 167);
-    transition: background-color 1s, color 0.5s;
-   
+    transition: background-color 0.5s, color 0.75s;
 }
 
 /* Redes */
@@ -142,7 +141,8 @@ ul.menu{
 .redes-list{
     display:flex;
     flex-direction: column;
-    margin-inline: 0.25rem
+    margin-inline: 0.25rem;
+    padding-left:0;
 }
 
 .redes-img{
@@ -167,15 +167,38 @@ ul.menu{
     margin-left: 17rem;
     text-shadow: 3px 3px #72b2cf9a;
     font-weight: 700;
+    font-size: 2rem;
     margin-bottom: 0;
+    transition-delay: 1s;
+    transition: all 0.3s;
+    -webkit-animation: tracking-in-expand 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
-.animate__backInLeft{
-    animation: backInLeft;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-delay: 0.5s;
-}
+@-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
 /* Index*/
 
@@ -252,7 +275,7 @@ ul.menu{
 }
 
 .tarjeta .linea > h3{
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin-bottom: 0;
 }
 
@@ -271,7 +294,6 @@ ul.menu{
 
 .titulo-tarjeta{
     color: #fff;
-
     text-align: center;
 }
 
@@ -296,11 +318,9 @@ ul.menu{
 .ver{
     text-decoration: none;
     text-align: center;
-    margin-right: 5px;
-    padding: 3px;
-    border-radius: 5px;
+    border-radius: 10px;
     color: #39667e;
-    background-color: #d0dee4;
+    transition: all 0.3s;
 }
 
 .ver a a:visited{
@@ -308,11 +328,11 @@ ul.menu{
     color:#39667e;
 }
 
-.linea a:hover{
-    background-color: #39667e;
-    color: #ffffff;
-    transition: background-color 0.5s, color 0.5s;
+.ver:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.16) 2px 3px 6px, rgba(0, 0, 0, 0.23) 2px 3px 6px;
 }
+
 
 .tarjeta-grid > div{
     flex: 1;
@@ -421,14 +441,49 @@ button, input, select, textarea {
 
 .nosotros{
     padding: 20px;
-
 }
+
+@-webkit-keyframes scale-in-ver-top {
+    0% {
+      -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-ver-top {
+    0% {
+      -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+      opacity: 1;
+    }
+  }
 
 .titulo-nosotros{
     color: rgb(59, 86, 126);
     padding: 1rem 4rem;
     text-align: justify;
     line-height: 2rem;
+    -webkit-animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    transition: all 1s;
 }
 
 .tarjeta-nosotros{
@@ -497,10 +552,39 @@ button, input, select, textarea {
     margin: 1rem;
     background-color:#62869e;
     border-radius: 1rem;
+    -webkit-animation: slide-in-bck-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bck-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
+@-webkit-keyframes slide-in-bck-top {
+    0% {
+      -webkit-transform: translateZ(700px) translateY(-300px);
+              transform: translateZ(700px) translateY(-300px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-bck-top {
+    0% {
+      -webkit-transform: translateZ(700px) translateY(-300px);
+              transform: translateZ(700px) translateY(-300px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+  
 
 .prod1{
     grid-area: prod1;
+    
 }
 .prod2{
     grid-area: prod2;
@@ -562,7 +646,34 @@ button, input, select, textarea {
     align-items: center;
     padding-inline: 20px;
     background-color: #5E94B7;
+    -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
+@-webkit-keyframes slide-in-fwd-center {
+    0% {
+      -webkit-transform: translateZ(-1400px);
+              transform: translateZ(-1400px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-fwd-center {
+    0% {
+      -webkit-transform: translateZ(-1400px);
+              transform: translateZ(-1400px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
 
 .img-servicios{
     width: 700px;
@@ -592,6 +703,9 @@ button, input, select, textarea {
     align-items: center;
     justify-content: center;
     gap: 1rems;
+    -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
 }
 
 .linea-b-servicios,
@@ -661,15 +775,81 @@ button, input, select, textarea {
     padding: 20px;
     width: 100%;
     height: 700px;
+    -webkit-animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+	        animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+            animation-delay: 0.25s;
+            transition: all 0.3s;
 }
+
+@-webkit-keyframes swing-in-top-fwd {
+    0% {
+      -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 1;
+    }
+  }
+  @keyframes swing-in-top-fwd {
+    0% {
+      -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 1;
+    }
+  }
 
 .redes-contacto{
     justify-content: center;
     align-items: center;
     width: 100%;
     background-color:#39667e;
+    transition: all 0.3s;
+    -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
 }
+
+@-webkit-keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-1000px);
+              transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-1000px);
+              transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
 
 .redes-contacto li{
     list-style: none;
@@ -694,15 +874,12 @@ button, input, select, textarea {
 
 }
 
-
 .redes-img-contacto{
     width: 100px;
     
 }
 
 /* Pie de pagina */
-
-
 
 .pie{
     display: flex;
