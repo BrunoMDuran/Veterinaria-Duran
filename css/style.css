@@ -209,22 +209,22 @@ ul.menu{
 
 .t1{
     grid-area: t1;
-    background-image: url(/Duran-Bruno-Manuel-33025/img/perrro-vacuna.jpg);
+    background-image: url(../img/perrro-vacuna.jpg);
 }
 
 .t2{
     grid-area: t2;
-    background-image: url(/Duran-Bruno-Manuel-33025/img/ectopills.jpg);
+    background-image: url(../img/ectopills.jpg);
 }
 
 .t3{
     grid-area: t3;
-    background-image: url(/Duran-Bruno-Manuel-33025/img/image7.jpeg);
+    background-image: url(../img/image7.jpeg);
 }
 
 .t4{
     grid-area: t4;
-    background-image: url(/Duran-Bruno-Manuel-33025/img/mascotas.jpg);
+    background-image: url(../img/mascotas.jpg);
 }
 
 .t5{
@@ -233,7 +233,7 @@ ul.menu{
 
 .t6{
     grid-area: t6;
-    background-image: url(/Duran-Bruno-Manuel-33025/img/image1.jpeg);
+    background-image: url(../img/image1.jpeg);
 }
 
 
