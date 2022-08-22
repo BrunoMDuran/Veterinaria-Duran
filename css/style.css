@@ -81,7 +81,7 @@ body{
     width: 150px;
 }
 
-.navbar{
+.navbarra{
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -91,8 +91,12 @@ body{
 
 }
 
-.navbar li{
+.navbarra li{
     list-style-type: none;
+}
+
+ul.menu{
+    margin-bottom: 0;
 }
 
 .menu{
@@ -161,6 +165,13 @@ body{
 .titulo-pagina h2{
     margin-left: 17rem;
     text-shadow: 3px 3px #72b2cf9a;
+}
+
+.animate__backInLeft{
+    animation: backInLeft;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 0.5s;
 }
 
 /* Index*/
