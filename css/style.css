@@ -48,6 +48,7 @@ body{
     width: 40rem;
     margin: 1rem;
     color: #fff;
+    font-size: 2rem;
 }
 
 .scroll{
@@ -165,6 +166,8 @@ ul.menu{
 .titulo-pagina h2{
     margin-left: 17rem;
     text-shadow: 3px 3px #72b2cf9a;
+    font-weight: 700;
+    margin-bottom: 0;
 }
 
 .animate__backInLeft{
@@ -248,6 +251,11 @@ ul.menu{
     flex: 1;
 }
 
+.tarjeta .linea > h3{
+    font-size: 1.25rem;
+    margin-bottom: 0;
+}
+
 .t1,
 .t2,
 .t3,
@@ -271,8 +279,8 @@ ul.menu{
     align-items: flex-end;
 }
 
-.t6 .linea{
-    font-size: larger;
+.t6 .linea > h3{
+    font-size: 2rem;
 }
 
 .linea{
@@ -405,6 +413,7 @@ button, input, select, textarea {
 .text-form{
     text-align: center;
     padding: 2rem;
+    font-size: 1.5rem;
 }
 
 
@@ -704,6 +713,7 @@ button, input, select, textarea {
     color: #fff;
     margin: 10px;
     padding: 10px;
+    font-size: 0.75rem;
     align-items: center;
     justify-content: center;
 }
