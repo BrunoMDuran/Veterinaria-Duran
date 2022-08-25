@@ -67,87 +67,114 @@ body{
 /* Barra de navegacion */
 
 .encabezado{
-    background-color: #1b688a80;
+    background-color: #3785a7c9;
+    height: 8vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
     position:sticky;
     top: 0;
-    z-index: 1;
+    z-index: 2;
+
 }
 
 .logo-imagen{
-    margin:5px;
+    padding:5px;
     width: 150px;
 }
 
+
+.custom-bar{
+    padding: 0;
+}
+
+.navbar-brand{
+    padding: inherit;
+}
+
 .navbarra{
-    display: flex;
-    width: 100%;
     justify-content: space-around;
-    font-size: larger;
+    font-size: 1.2rem;
     font-weight:bold;
     align-items: center;
-
+    gap: 25rem;
 }
 
-.navbarra li{
-    list-style-type: none;
-}
-
-ul.menu{
+.menu li > a{
     margin-bottom: 0;
+    color: #bdd8e4;
 }
 
 .menu{
-    height: 100%;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
     align-items: center;
 }
 
-.menu-item a{
-    border-radius: 7.5px;
+.menu li > a{
     color: #bdd8e4;
-    padding: 10px;
-    text-decoration: none;
+    padding: 1.25rem;
 }
 
 .menu-item.dif a{
-    border: 3px solid rgb(243, 178, 118);
     background-color: rgb(243, 178, 118) ;
-    padding: 30px 5px 30px 5px;
-
+    padding: 1.25rem;
 }
 
 .menu-item.dif a:hover,
-.menu-item.active.dif a{
-    background-color: rgb(243, 178, 118);
-    transition: color 0.75s;
-    
+.menu-item.activo.dif a{
+    background-color: rgba(243, 178, 118, 0.87);
+    transition: all 0.5s;
+    padding-inline: 2rem;
 }
 
-.menu-item.active a,
-.menu-item a:hover{
-    background-color: rgb(189, 216, 228);
+.menu-item{
+    padding-left: inherit;
+    padding-right: inherit;
+}
+
+.menu-item.activo a{
+    background-color: #bdd8e4;
     color: rgb(77, 113, 167);
-    transition: background-color 0.5s, color 0.75s;
+    padding-inline: 2rem !important;
+}
+
+.menu-item.activo a:hover,
+.menu-item a:hover{
+    background-color: #99c0d1;
+    color: rgb(77, 113, 167);
+    transition: all 0.5s;
+    padding-inline: 2rem !important;
 }
 
 /* Redes */
 
 .redes-list{
-    display:flex;
-    flex-direction: column;
-    margin-inline: 0.25rem;
-    padding-left:0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 1rem;
+    padding: inherit;
+    gap: 0.75rem;
 }
 
-.redes-img{
-    width: 25px;
+.redes-item a{
+    color: rgb(189, 216, 228);
 }
+
+.redes-item a:hover{
+    color: #39667e;
+    transition: all 0.3s;
+}
+
+.container-fluid{
+    padding-left: 0;
+    padding-right:0;
+}
+
+.carousel-inner{
+    height: 50vh;
+}
+
 
 /* Titulo contenido */
 
@@ -255,6 +282,7 @@ ul.menu{
 
 .t5{
     grid-area: t5;
+    background-image: url(../img/pexels-tima-miroshnichenko-6235241.jpg);
 }
 
 .t6{
@@ -301,7 +329,7 @@ ul.menu{
     align-items: flex-end;
 }
 
-.t6 .linea > h3{
+.t6.t5 .linea > h3{
     font-size: 2rem;
 }
 
@@ -353,8 +381,8 @@ button, input, select, textarea {
     box-sizing: border-box;
   }  
 
+
 .formulario{
-    border:solid 2px #39667eb0;
     background-color: #39667e;
     color: #fff;
     display: flex;
@@ -364,35 +392,40 @@ button, input, select, textarea {
 }
 
 .form{
+    border-radius: 20px;
     display: flex;
     justify-content: center;
-    box-shadow: 7px 7px 25px rgb(58, 58, 58);
+}
+
+.map-form{
+   border-radius: 20px ;
 }
 
 .caja-formulario{
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     background-color: #62869e;
-    width: 62rem;
     border: none ;
-    padding: 2rem;
-   
+    padding: 2.5rem;
 }
 
 .form-item textarea{
     padding: 0.5rem;
-   
-
+    border-radius: 10px;
+    border: none;
 }
 
 .form-item input {
     padding: 0.5rem;
-  
+    border-radius: 10px;
+    border: none;
 }
 
 .form-item select{
     padding: 0.5rem;
-  
+    border-radius: 10px;
+    border: none;
 }
 
 .grid-form{
@@ -407,8 +440,8 @@ button, input, select, textarea {
     "telefono   consulta "
     "tcons      enviar"
     ;
-    gap: 0.5rem;
-    column-gap: 3rem;
+    gap: 0.75rem;
+    column-gap: 2rem;
 }
 
 .na{
@@ -432,8 +465,8 @@ button, input, select, textarea {
 
 .text-form{
     text-align: center;
-    padding: 2rem;
-    font-size: 1.5rem;
+    padding: 2rem 5rem;
+    font-size: 1.25rem;
 }
 
 
@@ -906,6 +939,19 @@ button, input, select, textarea {
 
 }
 
+@media screen and (max-width: 1400px) {
+    .navbarra{
+        gap: 25rem;
+    }
+
+}
+@media screen and (max-width: 1145px) {
+    .navbarra{
+        gap: 18rem;
+    }
+
+}
+
 
 @media screen and (max-width: 1024px) {
     body{
@@ -984,7 +1030,6 @@ button, input, select, textarea {
     }
 
     .encabezado{
-        padding-top: 10px;
         flex-direction: column;
     }
 
@@ -1129,7 +1174,6 @@ button, input, select, textarea {
     }
 
     .encabezado{
-        padding-top: 10px;
         flex-direction: column;
     }
 

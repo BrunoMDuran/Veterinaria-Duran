@@ -7,11 +7,9 @@
     <title>Veterinaria Duran</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- custom styles -->
-
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -30,60 +28,82 @@
 
    <span><a id="inicio"></a></span>
     <header class="encabezado">
-   
-        <nav class="navbarra">
+        <nav class="navbar navbar-expand-lg custom-bar ">
+            <div class="container-fluid navbarra">
 
-            <div class="logo">
-                <a href="./index.html">
-                    <img class="logo-imagen" src="./img/vete-logo.png" alt="Logo Veterinaria Duran">
-                </a> 
-            </div>
+              <a class="navbar-brand" href="#"><img class="logo-imagen" src="./img/vete-logo.png" alt="logo vete"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
 
-            <ul class="menu">
-
-                <li class="menu-item active">
-                    <a href="#inicio">Inicio</a>
-                </li>
-
-                <li class="menu-item">
-                    <a href="./pages/nosotros.html">Nosotros</a>
-                </li>
-
-                <li class="menu-item">
-                    <a href="./pages/productos.html">Productos</a>
-                </li>
-
-                <li class="menu-item">
-                    <a href="./pages/servicios.html">Servicios</a>
-                </li>
-
-                <li class="menu-item dif">
-                    <a href="./pages/contacto.html">Contacto</a>
-                </li>
-
-                <!-- Redes sociales/contacto -->
-
-                <div class="redes">
-                    <ul class="redes-list">   
-                        <li class="redes-item"><a target="_blank" href="https://www.instagram.com/veterinariaduran/?hl=es"><img class="redes-img"  src="./img/icons8-instagram-50.png" alt=""></a></li> 
-                        <li class="redes-item"><a target="_blank" href="https://www.facebook.com/veterinaria.duran.9"><img class="redes-img"  src="./img/icons8-facebook-nuevo-50.png" alt=""></a></li>
-                        <li class="redes-item"><a target="_blank" href="https://web.whatsapp.com/"><img class="redes-img"  src="./img/icons8-whatsapp-50.png" alt="whatsapp"></a></li>
+                    <ul class="navbar-nav menu">
+                        <li class="nav-item  activo menu-item">
+                            <a class="nav-link" aria-current="page" href="index.html/#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item menu-item">
+                            <a class="nav-link texto" href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item menu-item">
+                            <a class="nav-link" href="./pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item menu-item">
+                            <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item menu-item dif">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
                     </ul>
+
+                    <div class="redes">
+                        <ul class="redes-list">   
+                            <li class="redes-item"><a target="_blank" href="https://www.instagram.com/veterinariaduran/?hl=es"><i class="bi bi-instagram"></i></a></li> 
+                            <li class="redes-item"><a target="_blank" href="https://www.facebook.com/veterinaria.duran.9"><i class="bi bi-facebook"></i></a></li>
+                            <li class="redes-item"><a target="_blank" href="https://web.whatsapp.com/"><i class="bi bi-whatsapp"></i></a></li>
+                        </ul>
+                    </div>
+
                 </div>
-            </ul> 
+            </div>
         </nav>
     </header>
+
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade container-fluid" data-bs-ride="carousel">
+        <div class="carousel-inner justify-content-center align-content-center">
+          <div class="carousel-item active">
+            <img src="./img/340.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/gato-en-la-clínica-veterinaria-pancarta-panorámica-156018422.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/veterinario-y-gato-bandera-panorámica-con-el-155391153.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
 <!-- Titulo contenido -->
 
     
-    <section class="titulo-pagina">
+    <section data-aos="fade-right" data-aos-duration="1500" class="titulo-pagina">
         <h2>Conocenos</h2>
     </section>
+
+
+    
     
 <!-- Contenido Inicio -->    
-<section class="contenido-flex">
-    <section class="contenido">
+<section class="contenido-flex ">
+    <section class="contenido container-xl">
         
         <div class="tarjeta-grid"> 
 
@@ -116,11 +136,13 @@
                 </div>
             </a>
 
-            <div class="tarjeta t5">
-                <iframe class="img-seg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.3007822693403!2d-57.55599398414272!3d-37.99344415212028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d841e5b021a7%3A0xe09908410384ae4!2sVeterinaria%20Dur%C3%A1n!5e0!3m2!1ses-419!2sar!4v1658241949518!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="tarjeta t5" data-aos="zoom-in-right">
+                <div class="linea">
+                    <h3 class="titulo-tarjeta">Brindamos la mejor atencion</h3>
+                </div>
             </div>
 
-            <div class="tarjeta t6">
+            <div class="tarjeta t6" data-aos="zoom-in-left">
                 <div class="linea">
                     <h3 class="titulo-tarjeta">Encontranos en 25 de Mayo 3411</h3>
                 </div>
@@ -133,51 +155,55 @@
 
  <!-- Formulario de contacto -->
 
-        <section class="formulario">
+        <section class="formulario container-fluid col" data-aos="fade-up">
+
             
             <h3 class="text-form">Cualquier duda o consulta que tenga nos la hace llegar mediante el formulario de contacto, muchas gracias, saludos Veterinaria Duran.</h3>
+                  
+                  <form class="form gap-5" action="input">
 
-            <form class="form" action="input">
-                <fieldset class="caja-formulario">
+                    <iframe class="map-form col" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.3007822693403!2d-57.55599398414272!3d-37.99344415212028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d841e5b021a7%3A0xe09908410384ae4!2sVeterinaria%20Dur%C3%A1n!5e0!3m2!1ses-419!2sar!4v1658241949518!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                    <div class="grid-form">
-
-                        <div class="form-item na">
-                            <label for="NombreApellido" class="form-label">Nombre y apellido*</label>
-                            <input name="NombreApellido" type="text" placeholder="ej. Bruno Duran">
-                        </div>
-
-                        <div class="form-item mail">
-                            <label for="email" class="form-label">Email*</label>
-                            <input name="email" type="email" placeholder="Mail">
-                        </div>
-
-                        <div class="form-item tel">
-                            <label for="telefono" class="form-label">Telefono</label>
-                            <input name="telefono" type="text" placeholder="+54 123-123456">
-                        </div>
-
-                        <div class="form-item tcons">
-                            <label for="tconsulta" class="form-label">Tipo de consulta</label>
-                            <select name="tconsulta" id="tcons">
-                                <option value="cons0">Otros</option>
-                                <option value="cons1">Consulta Perro</option>
-                                <option value="cons2">Consulta Gato</option>
-                            </select>
-                        </div>
-            
-                        <div class="form-item cons">
-                            <label for="consulta" class="form-label">Consulta*</label>
-                            <textarea name="consulta" id="cons" cols="20" rows="10"></textarea>
-                        </div>
-
-                        <div class="form-item env">
-                            <label for="enviar">*Oblgatorio</label>
-                            <input type="submit" name="enviar" value="Enviar">
-                        </div>
-                    </div> 
-                </fieldset>
-            </form>
+                    <fieldset class="caja-formulario col">
+    
+                        <div class="grid-form">
+    
+                            <div class="form-item na">
+                               
+                                <input name="NombreApellido" type="text" placeholder="Nombre y apellido">
+                            </div>
+    
+                            <div class="form-item mail">
+                                
+                                <input name="email" type="email" placeholder="Mail">
+                            </div>
+    
+                            <div class="form-item tel">
+                
+                                <input name="telefono" type="text" placeholder="Num. Telefono">
+                            </div>
+    
+                            <div class="form-item tcons">
+                                
+                                <select name="tconsulta" id="tcons">
+                                    <option value="cons0">Otros</option>
+                                    <option value="cons1">Consulta Perro</option>
+                                    <option value="cons2">Consulta Gato</option>
+                                </select>
+                            </div>
+                
+                            <div class="form-item cons">
+                             
+                                <textarea name="consulta" id="cons" cols="1" rows="6" placeholder="Consulta"></textarea>
+                            </div>
+    
+                            <div class="form-item env">
+                        
+                                <input type="submit" name="enviar" value="Enviar">
+                            </div>
+                        </div> 
+                    </fieldset>
+                </form>
         </section>   
     </section>
 
@@ -189,5 +215,9 @@
 
 
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
