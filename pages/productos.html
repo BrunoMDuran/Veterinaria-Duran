@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veterinaria Duran - Productos</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- custom styles -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -12,27 +17,27 @@
         <nav class="navbar navbar-expand-lg custom-bar ">
             <div class="container-fluid navbarra">
 
-              <a class="navbar-brand" href="#"><img class="logo-imagen" src="./img/vete-logo.png" alt="logo vete"></a>
+              <a class="navbar-brand" href="../index.html"><img class="logo-imagen" src="../img/vete-logo.png" alt="logo vete"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
 
                     <ul class="navbar-nav menu">
-                        <li class="nav-item menu-item">
-                            <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                        <li class="nav-item  menu-item">
+                            <a class="nav-link" aria-current="page" href="../#inicio">Inicio</a>
                         </li>
-                        <li class="nav-item menu-item">
-                            <a class="nav-link texto" href="#">Nosotros</a>
-                        </li>
-                        <li class="nav-item activo menu-item">
-                            <a class="nav-link" href="#">Productos</a>
+                        <li class="nav-item  menu-item">
+                            <a class="nav-link texto" href="./nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item activo menu-item">
-                            <a class="nav-link" href="#">Servicios</a>
+                            <a class="nav-link" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item menu-item">
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
                         </li>
                         <li class="nav-item menu-item dif">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
 
@@ -53,56 +58,217 @@
         <h2>Productos</h2>
     </section>
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Hectopills</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body d-flex justify-content-center">
+        <img class="w-75" src="../img/ectopills.jpg" alt="Hectopills">
+        
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <h5>Pulguicidas y garrapaticidas. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, consequuntur.</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
     <section class="contenido-flex">
-        <section class="contenido">
+        <section class="contenido container-xl prod">
             <div class="tarjeta-productos"> 
-                <div class="prod prod1">
-                     <img class="imagen-prod" src="../img/ectopills.jpg" alt="Perro vacuna">
-                     <h3 class="titulo-prod">Pulguicidas y garrapaticidas</h3>
+                <div class="container text-center justify-content-center align-content-center">
+                    <div class="row pt-4 pb-4 px-3 g-4">
+                      <div class="col">
+                         <div class="card" data-aos="zoom-in-up">
+                                <img src="../img/ectopills.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">EctoPills</h5>
+                                    <p class="card-text">Pulguicidas y garrapaticidas</p>
+                                    <button type="button" class="btn btn-outline-dark btn-light ver-mas" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                      Ver mas
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                      <div class="col">
+                        <div class="card" data-aos="zoom-in-up">
+                            <img src="../img/ectopills.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">EctoPills</h5>
+                                <p class="card-text">Pulguicidas y garrapaticidas</p>
+                                <button type="button" class="btn btn-outline-dark btn-light ver-mas" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                  Ver mas
+                                </button>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col">
+                        <div class="card" data-aos="zoom-in-up">
+                            <img src="../img/ectopills.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">EctoPills</h5>
+                              <p class="card-text">Pulguicidas y garrapaticidas</p>
+                              <button type="button" class="btn btn-outline-dark btn-light ver-mas" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Ver mas
+                              </button>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col">
+                        <div class="card" data-aos="zoom-in-up">
+                            <img src="../img/ectopills.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">EctoPills</h5>
+                              <p class="card-text">Pulguicidas y garrapaticidas</p>
+                              <button type="button" class="btn btn-outline-dark btn-light ver-mas" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Ver mas
+                              </button>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="container text-center justify-content-center align-content-center">
+                    <div class="row  pb-4 px-3 g-4">
+                        <div class="col">
+                            <div class="card h-100" data-aos="zoom-in-up">
+                                <img src="../img/ectopills.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">EctoPills</h5>
+                                  <p class="card-text">Pulguicidas y garrapaticidas</p>
+                                  <button type="button" class="btn btn-outline-dark btn-light ver-mas" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Ver mas
+                                  </button>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col">
+                            <div class="card h-100" data-aos="zoom-in-up">
+                                <img src="../img/ectopills.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">EctoPills</h5>
+                                  <p class="card-text">Pulguicidas y garrapaticidas</p>
+                                  <button type="button" class="btn btn-outline-dark btn-light ver-mas" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Ver mas
+                                  </button>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col">
+                            <div class="card h-100" data-aos="zoom-in-up">
+                                <img src="../img/ectopills.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">EctoPills</h5>
+                                  <p class="card-text">Pulguicidas y garrapaticidas</p>
+                                  <button type="button" class="btn btn-outline-dark btn-light ver-mas" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Ver mas
+                                  </button>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col">
+                            <div class="card h-100" data-aos="zoom-in-up">
+                                <img src="../img/ectopills.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">EctoPills</h5>
+                                  <p class="card-text">Pulguicidas y garrapaticidas</p>
+                                  <button type="button" class="btn btn-outline-dark btn-light ver-mas" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Ver mas
+                                  </button>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+
                 </div>
-                <div class="prod prod2">
-                     <img class="imagen-prod" src="../img/ectopills.jpg" alt="Perro vacuna">
-                     <h3 class="titulo-prod">Pulguicidas y garrapaticidas</h3>
+                  
+                <div class="container text-center justify-content-center align-content-center">
+                    <div class="row  pb-4 px-3 g-4 g-sm-4 gx-sm-4">
+                        <div class="col-md-4">
+                            <div class="card h-100" data-aos="zoom-in-up">
+                                <img src="../img/ectopills.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">EctoPills</h5>
+                                  <p class="card-text">Pulguicidas y garrapaticidas</p>
+                                  <button type="button" class="btn btn-outline-dark btn-light ver-mas" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Ver mas
+                                  </button>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="card h-100" data-aos="zoom-in-up">
+                                <img src="../img/ectopills.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">EctoPills</h5>
+                                  <p class="card-text">Pulguicidas y garrapaticidas</p>
+                                  <button type="button" class="btn btn-outline-dark btn-light ver-mas" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Ver mas
+                                  </button>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="card h-100" data-aos="zoom-in-up">
+                                <img src="../img/ectopills.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">EctoPills</h5>
+                                  <p class="card-text">Pulguicidas y garrapaticidas</p>
+                                  <button type="button" class="btn btn-outline-dark btn-light ver-mas" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Ver mas
+                                  </button>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+
                 </div>
-                <div class="prod prod3">
-                     <img class="imagen-prod" src="../img/ectopills.jpg" alt="Perro vacuna">
-                     <h3 class="titulo-prod">Pulguicidas y garrapaticidas</h3>
-                </div>
-                <div class="prod prod4">
-                     <img class="imagen-prod" src="../img/ectopills.jpg" alt="Perro vacuna">
-                     <h3 class="titulo-prod">Pulguicidas y garrapaticidas</h3>
-                </div>
-                <div class="prod prod5">
-                     <img class="imagen-prod" src="../img/ectopills.jpg" alt="Perro vacuna">
-                     <h3 class="titulo-prod">Pulguicidas y garrapaticidas</h3>
-                </div>
-                <div class="prod prod6">
-                     <img class="imagen-prod" src="../img/ectopills.jpg" alt="Perro vacuna">
-                     <h3 class="titulo-prod">Pulguicidas y garrapaticidas</h3>
-                </div>
-                <div class="prod prod7">
-                     <img class="imagen-prod" src="../img/ectopills.jpg" alt="Perro vacuna">
-                     <h3 class="titulo-prod">Pulguicidas y garrapaticidas</h3>
-                </div>
-                <div class="prod prod8">
-                     <img class="imagen-prod" src="../img/ectopills.jpg" alt="Perro vacuna">
-                     <h3 class="titulo-prod">Pulguicidas y garrapaticidas</h3>
-                </div>
-                <div class="prod prod9">
-                     <img class="imagen-prod" src="../img/ectopills.jpg" alt="Perro vacuna">
-                     <h3 class="titulo-prod">Pulguicidas y garrapaticidas</h3>
-               </div>
-                <div class="prod prod10">
-                     <img class="imagen-prod" src="../img/ectopills.jpg" alt="Perro vacuna">
-                     <h3 class="titulo-prod">Pulguicidas y garrapaticidas</h3>
-                </div>
-                <div class="prod prod11">
-                     <img class="imagen-prod" src="../img/ectopills.jpg" alt="Perro vacuna">
-                     <h3 class="titulo-prod">Pulguicidas y garrapaticidas</h3>
-                </div> 
-                <div class="prod prod12">
-                     <img class="imagen-prod" src="../img/ectopills.jpg" alt="Perro vacuna">
-                     <h3 class="titulo-prod">Pulguicidas y garrapaticidas</h3>
+
+                <div class="container text-center justify-content-center align-content-center">
+                    <div class="row  pb-4 px-3 g-4 g-sm-4 gx-sm-4">
+                        <div class="col-md-4">
+                            <div class="card h-100" data-aos="zoom-in-up">
+                                <img src="../img/ectopills.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">EctoPills</h5>
+                                  <p class="card-text">Pulguicidas y garrapaticidas</p>
+                                  <button type="button" class="btn btn-outline-dark btn-light ver-mas" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Ver mas
+                                  </button>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="card h-100" data-aos="zoom-in-up">
+                                <img src="../img/ectopills.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">EctoPills</h5>
+                                  <p class="card-text">Pulguicidas y garrapaticidas</p>
+                                  <button type="button" class="btn btn-outline-dark btn-light ver-mas" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Ver mas
+                                  </button>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="card h-100" data-aos="zoom-in-up">
+                                <img src="../img/ectopills.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">EctoPills</h5>
+                                  <p class="card-text">Pulguicidas y garrapaticidas</p>
+                                  <button type="button" class="btn btn-outline-dark btn-light ver-mas" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Ver mas
+                                  </button>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+
                 </div>
             </div>
         </section>
@@ -111,5 +277,10 @@
     <footer class="pie">
         <h6>© Copy 2022</h6>
     </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>  
 </html>

@@ -171,7 +171,7 @@ body{
     padding-right:0;
 }
 
-.carousel-inner{
+.carousel-index{
     height: 50vh;
 }
 
@@ -183,7 +183,7 @@ body{
     padding: 20px;
     align-items: center;
     justify-content:flex-start;
-    color: rgb(27, 105, 138);
+    color: #1b698a;
     font-size: 1.75rem;
     background-color: #bdd8e4;
     text-shadow: #39667e;
@@ -201,6 +201,7 @@ body{
     -webkit-animation: tracking-in-expand 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-expand 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
+
 
 @-webkit-keyframes tracking-in-expand {
     0% {
@@ -473,49 +474,14 @@ button, input, select, textarea {
 /* Nosotros */
 
 .nosotros{
-    padding: 20px;
+    padding-top: 5px;
 }
-
-@-webkit-keyframes scale-in-ver-top {
-    0% {
-      -webkit-transform: scaleY(0);
-              transform: scaleY(0);
-      -webkit-transform-origin: 100% 0%;
-              transform-origin: 100% 0%;
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scaleY(1);
-              transform: scaleY(1);
-      -webkit-transform-origin: 100% 0%;
-              transform-origin: 100% 0%;
-      opacity: 1;
-    }
-  }
-  @keyframes scale-in-ver-top {
-    0% {
-      -webkit-transform: scaleY(0);
-              transform: scaleY(0);
-      -webkit-transform-origin: 100% 0%;
-              transform-origin: 100% 0%;
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scaleY(1);
-              transform: scaleY(1);
-      -webkit-transform-origin: 100% 0%;
-              transform-origin: 100% 0%;
-      opacity: 1;
-    }
-  }
 
 .titulo-nosotros{
     color: rgb(59, 86, 126);
     padding: 1rem 4rem;
     text-align: justify;
     line-height: 2rem;
-    -webkit-animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     transition: all 1s;
 }
 
@@ -528,7 +494,10 @@ button, input, select, textarea {
 
     grid-template-areas: 
     "imagen-a   linea-a"
-    "linea-b    imagen-b";
+    "linea-b    imagen-b"
+    "imagen-c   linea-c"
+    "linea-d    imagen-d"
+    ;
     align-items: center;
     justify-content: center;
     gap: 1rem;
@@ -551,39 +520,51 @@ button, input, select, textarea {
     grid-area: linea-b;
 }
 
+.imagen-c{
+    grid-area: imagen-c;
+}
+
+.imagen-d{
+    grid-area: imagen-d;
+}
+
+.linea-c{
+    grid-area: linea-c;
+}
+
+.linea-d{
+    grid-area: linea-d;
+}
+
 .img-nosotros-a,
 .img-nosotros-b{
     width: 100%;
 }
 
+.contenido-flex-nos{
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
 
 /* Productos */
 
-.tarjeta-productos{
-    padding: 25px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(8 1fr);
-    grid-template-areas:
-    "prod12 prod12  prod12 prod12"
-    "prod12 prod12  prod12 prod12"
-    "prod12 prod12  prod12 prod12"
-    "prod1  prod1   prod2  prod3"
-    "prod1  prod1   prod4  prod5"
-    "prod6  prod7   prod8  prod9"
-    "prod10 prod10  prod11 prod11"
-    "prod10 prod10  prod11 prod11"
-    ;
-    align-items:center;
-    justify-content: center;
-    text-align: center;
-    flex: 1;
-    gap: 2rem;
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: all 0.3s;
+}
+
+.ver-mas:hover{
+    background-color: #39667e;
+    border-color: #39667e;
+    transition: all 0.3s;
 }
 
 .prod{
     margin: 1rem;
-    background-color:#62869e;
+    background-color:#1b698a96;
     border-radius: 1rem;
     -webkit-animation: slide-in-bck-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-in-bck-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -613,119 +594,17 @@ button, input, select, textarea {
       opacity: 1;
     }
   }
-  
-
-.prod1{
-    grid-area: prod1;
-    
-}
-.prod2{
-    grid-area: prod2;
-}
-.prod3{
-    grid-area: prod3;
-}
-.prod4{
-    grid-area: prod4;
-}
-.prod5{
-    grid-area: prod5;
-}
-.prod6{
-    grid-area: prod6;
-}
-.prod7{
-    grid-area: prod7;
-}
-.prod8{
-    grid-area: prod8;
-}
-.prod9{
-    grid-area: prod9;
-}
-.prod10{
-    grid-area: prod10;
-}
-.prod11{
-    grid-area: prod11;
-}
-.prod12{
-    grid-area: prod12;
-}
-
-
-.titulo-prod{
-    color: #fff;
-    margin: 0.5rem;
-    text-align: center;
-}
-
-.imagen-prod{
-    overflow: hidden;
-    width: 100%;
-    max-width: 100%;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    flex: 1;
-}
 
 /* Servicios */
 
-.servicios{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-inline: 20px;
-    background-color: #5E94B7;
-    -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-@-webkit-keyframes slide-in-fwd-center {
-    0% {
-      -webkit-transform: translateZ(-1400px);
-              transform: translateZ(-1400px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateZ(0);
-              transform: translateZ(0);
-      opacity: 1;
-    }
-  }
-  @keyframes slide-in-fwd-center {
-    0% {
-      -webkit-transform: translateZ(-1400px);
-              transform: translateZ(-1400px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateZ(0);
-              transform: translateZ(0);
-      opacity: 1;
-    }
-  }
-
-.img-servicios{
-    width: 700px;
-}
-
-.titulo-img{
-    text-align: center;
-    padding-inline: 10%;
-    padding-block: 5%;
-    background-color: #5E94B7;
-    color: #fff;
+.container-xl{
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .tarjeta-servicios{
     width: 100%;
     background-color: #78aacc;
-    padding: 20px;
-    border: solid 10px #5E94B7;
-    border-radius: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -858,6 +737,22 @@ button, input, select, textarea {
 
 }
 
+.acordion{
+    background-color: inherit;
+    background-color: #39667e;
+    color: #fff;
+    border: inherit;
+    border-radius: 0;
+}
+
+.acordion-font{
+    font-size: 2rem;
+}
+
+.accordion-border{
+    border-radius: 0;
+}
+
 @-webkit-keyframes slide-in-top {
     0% {
       -webkit-transform: translateY(-1000px);
@@ -891,7 +786,6 @@ button, input, select, textarea {
 .redes-list-contacto{
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
     display: flex;
 }
 
@@ -904,13 +798,17 @@ button, input, select, textarea {
 .redes-item-contacto{
     padding:40px;
     text-align: center;
-
 }
 
-.redes-img-contacto{
-    width: 100px;
-    
+.redes-item-contacto a:hover{
+    color: #5E94B7;
+    transition: all 0.3s;
 }
+
+.redes-item-contacto i{
+    font-size: 100px;
+}
+
 
 /* Pie de pagina */
 
@@ -929,6 +827,10 @@ button, input, select, textarea {
 }
 
 @media screen and (max-width: 1800px) {
+.html{
+    max-width: 1800px;
+}
+
     .titulo-pagina{
         justify-content:center;
     }
@@ -940,20 +842,30 @@ button, input, select, textarea {
 }
 
 @media screen and (max-width: 1400px) {
+    .html{
+        max-width: 1400px;
+    }
     .navbarra{
-        gap: 25rem;
+        gap: 18rem;
     }
 
 }
 @media screen and (max-width: 1145px) {
+    .html{
+        max-width: 1145px;
+    }
     .navbarra{
-        gap: 18rem;
+        gap: 10rem;
     }
 
 }
 
 
 @media screen and (max-width: 1024px) {
+    .html{
+        max-width: 1024px;
+    }
+
     body{
         width: 1024px;
         max-width: 1024px;
@@ -996,10 +908,20 @@ button, input, select, textarea {
         line-height: 2rem;
     }
 
+    .form{
+        flex-direction: column;
+    }
+
+    .grid-form{
+        width: 40rem;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
-   
+    .html{
+        max-width: 768px;
+    }
     body{
         width: 768px;
         max-width: 768px;
@@ -1141,6 +1063,10 @@ button, input, select, textarea {
 } 
 
 @media screen and (max-width: 480px) {
+    .html{
+        max-width: 480px;
+    }
+
     body{
         width: 480px;
         max-width: 480px;

@@ -39,7 +39,7 @@
 
                     <ul class="navbar-nav menu">
                         <li class="nav-item  activo menu-item">
-                            <a class="nav-link" aria-current="page" href="index.html/#inicio">Inicio</a>
+                            <a class="nav-link" aria-current="page" href="./#inicio">Inicio</a>
                         </li>
                         <li class="nav-item menu-item">
                             <a class="nav-link texto" href="./pages/nosotros.html">Nosotros</a>
@@ -69,23 +69,28 @@
     </header>
 
 
-    <div id="carouselExampleFade" class="carousel slide carousel-fade container-fluid" data-bs-ride="carousel">
-        <div class="carousel-inner justify-content-center align-content-center">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner carousel-index">
           <div class="carousel-item active">
             <img src="./img/340.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="./img/gato-en-la-clínica-veterinaria-pancarta-panorámica-156018422.jpg" class="d-block w-100" alt="...">
+            <img src="./img/340.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="./img/veterinario-y-gato-bandera-panorámica-con-el-155391153.jpg" class="d-block w-100" alt="...">
+            <img src="./img/340.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -108,28 +113,28 @@
         <div class="tarjeta-grid"> 
 
             <a class="ver" href="./pages/servicios.html">
-                <div class="tarjeta t1">
+                <div class="tarjeta t1" data-aos="zoom-out-right">
                     <div class="linea">
                       <h3 class="titulo-tarjeta">Vacunaciones y revision</h3>
                     </div>  
                 </div>
             </a>
             <a class="ver" href="./pages/productos.html">
-                <div class="tarjeta t2">
+                <div class="tarjeta t2" data-aos="zoom-out-down">
                     <div class="linea">
                       <h3 class="titulo-tarjeta">Pulguicidas y garrapaticidas</h3>
                     </div>  
                 </div>
             </a>
             <a class="ver" href="./pages/nosotros.html">
-                <div class="tarjeta t3">
+                <div class="tarjeta t3" data-aos="zoom-out-down">
                     <div class="linea">
                       <h3 class="titulo-tarjeta">Consultorio y laboratorio</h3>
                     </div>  
                 </div>
             </a>
             <a class="ver" href="./pages/contacto.html">
-                <div class="tarjeta t4">
+                <div class="tarjeta t4" data-aos="zoom-out-left">
                     <div class="linea">
                       <h3 class="titulo-tarjeta">Atencion personalizada</h3>
                     </div>  
@@ -162,9 +167,9 @@
                   
                   <form class="form gap-5" action="input">
 
-                    <iframe class="map-form col" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.3007822693403!2d-57.55599398414272!3d-37.99344415212028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d841e5b021a7%3A0xe09908410384ae4!2sVeterinaria%20Dur%C3%A1n!5e0!3m2!1ses-419!2sar!4v1658241949518!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe data-aos="fade-right" class="map-form col" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.3007822693403!2d-57.55599398414272!3d-37.99344415212028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d841e5b021a7%3A0xe09908410384ae4!2sVeterinaria%20Dur%C3%A1n!5e0!3m2!1ses-419!2sar!4v1658241949518!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                    <fieldset class="caja-formulario col">
+                    <fieldset class="caja-formulario col" data-aos="fade-left">
     
                         <div class="grid-form">
     

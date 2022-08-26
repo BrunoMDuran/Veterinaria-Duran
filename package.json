@@ -1,0 +1,24 @@
+{
+  "name": "duran-bruno-manuel-33025",
+  "version": "1.0.0",
+  "description": "Desarrollo Web 33025",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss":"node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrunoMDuran/Veterinaria-Duran.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrunoMDuran/Veterinaria-Duran/issues"
+  },
+  "homepage": "https://github.com/BrunoMDuran/Veterinaria-Duran#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

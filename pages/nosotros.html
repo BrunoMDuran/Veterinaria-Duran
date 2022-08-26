@@ -17,7 +17,7 @@
         <nav class="navbar navbar-expand-lg custom-bar ">
             <div class="container-fluid navbarra">
 
-              <a class="navbar-brand" href="#"><img class="logo-imagen" src="../img/vete-logo.png" alt="logo vete"></a>
+              <a class="navbar-brand" href="../index.html"><img class="logo-imagen" src="../img/vete-logo.png" alt="logo vete"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -25,19 +25,19 @@
 
                     <ul class="navbar-nav menu">
                         <li class="nav-item  menu-item">
-                            <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link" aria-current="page" href="../#inicio">Inicio</a>
                         </li>
                         <li class="nav-item  activo menu-item">
-                            <a class="nav-link texto" href="#">Nosotros</a>
+                            <a class="nav-link texto" href="./nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item menu-item">
-                            <a class="nav-link" href="#">Productos</a>
+                            <a class="nav-link" href="./productos.html">Productos</a>
                         </li>
                         <li class="nav-item menu-item">
-                            <a class="nav-link" href="#">Servicios</a>
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
                         </li>
                         <li class="nav-item menu-item dif">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
 
@@ -58,20 +58,33 @@
         <h2>Nosotros</h2>
     </section> 
 
-    <section class="contenido-flex">
-        <section class="contenido">
+    <section class="contenido-flex-nos">
+        <section class="container-fluid">
             <div class="nosotros"> 
                 <div class="tarjeta-nosotros">
-                     <div class="imagen-nosotros">
-                        <img class="img-nosotros-a" src="../img/image1.jpeg" alt="Frente veterinaria">
+                     <div class="imagen-a" data-aos="fade-right">
+                        <img class="img-nosotros-a " src="../img/image1.jpeg" alt="Frente veterinaria">
                      </div>
-                     <div class="linea-a">
+                     <div class="linea-a" data-aos="fade-left">
                        <h3 class="titulo-nosotros">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda sint voluptatibus ad, officia nisi temporibus, blanditiis impedit ipsam cum dicta officiis ea quae tempora? Tempore, laborum doloremque cumque explicabo laudantium atque ipsum inventore</h3>
                      </div>
-                     <div class="imagen-b">
+                     <div class="imagen-b" data-aos="fade-left">
                         <img class="img-nosotros-b" src="../img/image7.jpeg" alt="Consultorio">
                      </div>
-                     <div class="linea-b">
+                     <div class="linea-b" data-aos="fade-right">
+                        <h3 class="titulo-nosotros">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda sint voluptatibus ad, officia nisi temporibus, blanditiis impedit ipsam cum dicta officiis ea quae tempora? Tempore, laborum doloremque cumque explicabo laudantium atque ipsum inventore</h3>
+                     </div>
+
+                     <div class="imagen-c" data-aos="fade-right">
+                        <img class="img-nosotros-a" src="../img/image1.jpeg" alt="Frente veterinaria">
+                     </div>
+                     <div class="linea-c" data-aos="fade-left">
+                       <h3 class="titulo-nosotros">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda sint voluptatibus ad, officia nisi temporibus, blanditiis impedit ipsam cum dicta officiis ea quae tempora? Tempore, laborum doloremque cumque explicabo laudantium atque ipsum inventore</h3>
+                     </div>
+                     <div class="imagen-d" data-aos="fade-left">
+                        <img class="img-nosotros-b" src="../img/image7.jpeg" alt="Consultorio">
+                     </div>
+                     <div class="linea-d" data-aos="fade-right">
                         <h3 class="titulo-nosotros">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda sint voluptatibus ad, officia nisi temporibus, blanditiis impedit ipsam cum dicta officiis ea quae tempora? Tempore, laborum doloremque cumque explicabo laudantium atque ipsum inventore</h3>
                      </div>
                 </div> 
@@ -82,5 +95,12 @@
     <footer class="pie">
         <h6>© Copy 2022</h6>
     </footer>
+
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
