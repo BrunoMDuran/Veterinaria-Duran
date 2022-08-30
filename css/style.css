@@ -116,12 +116,12 @@ body{
 
 .menu li > a{
     color: #bdd8e4;
-    padding: 1.25rem;
+    padding: 1.26rem;
 }
 
 .menu-item.dif a{
     background-color: rgb(243, 178, 118) ;
-    padding: 1.25rem;
+    padding: 1.26rem;
 }
 
 .menu-item.dif a:hover,
@@ -879,7 +879,6 @@ button, input, select, textarea {
 
 @media screen and (max-width: 1024px) {
     .html{
- 
         max-width: 1024px;
     }
 
@@ -910,6 +909,16 @@ button, input, select, textarea {
         margin-left: inherit;
     }
 
+    .navbarra{
+        gap: inherit;
+        width: 100%;
+        background-color: #589BB8;
+    }
+
+    .redes-list{
+        margin-block: 20px;
+    }
+
     .caja-formulario{
         width: 45rem;
         margin-right:inherit;
@@ -935,11 +944,22 @@ button, input, select, textarea {
 
 }
 
+@media screen and (max-width: 992px) {
+    .custom-bar{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
 @media screen and (max-width: 768px) {
     .html{
         max-width: 768px;
     }
     body{
+        overflow-x: hidden ;
         width: 768px;
         max-width: 768px;
     }
@@ -968,38 +988,8 @@ button, input, select, textarea {
         width: 30px;
     }
 
-    .encabezado{
-        flex-direction: column;
-    }
-
-    .navbar{
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        font-size: larger;
-    }
-
-    .logo-imagen{
-        margin:inherit;
-        width: 100px;
-    }
-
-    .menu{
-        height: 100%;
-        padding: 5px;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .menu-item a{
-        font-size: large;
-        padding: 5px;
-    }
-
-    .menu-item.dif a{
-        border: inherit;
-        padding: 5px;
-    
+    .navbarra{
+        gap: inherit;
     }
 
     .redes-list{
