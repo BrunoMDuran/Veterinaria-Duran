@@ -1,0 +1,16 @@
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .contenido-flex{
+      display: flex;
+      justify-content: center;
+  }
+  
+  .contenido{
+      display: flex;
+      flex-direction: column;
+      width: 83rem;
+      background-color: #aacddf;
+  }

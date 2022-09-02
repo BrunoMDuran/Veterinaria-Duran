@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&display=swap');
 
 *{
-    zoom:100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -83,7 +82,6 @@ body{
     position:sticky;
     top: 0;
     z-index: 4;
-
 }
 
 .logo-imagen{
@@ -115,15 +113,11 @@ body{
 .menu li > a{
     margin-bottom: 0;
     color: #bdd8e4;
+    padding: 1.26rem;
 }
 
 .menu{
     align-items: center;
-}
-
-.menu li > a{
-    color: #bdd8e4;
-    padding: 1.26rem;
 }
 
 .menu-item.dif a{
@@ -253,7 +247,6 @@ body{
     flex-direction: column;
     width: 83rem;
     background-color: #aacddf;
-
 }
 
 .tarjeta-grid{

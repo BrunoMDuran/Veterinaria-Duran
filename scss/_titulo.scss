@@ -1,0 +1,57 @@
+  /* Titulo */
+  
+  .titulo-pagina {
+    overflow-x: hidden;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    color: #1b698a;
+    font-size: 1.75rem;
+    background-color: #bdd8e4;
+    text-shadow: #39667e;
+    box-shadow: 5px 5px #b0d2e2e0;
+  
+    h2 {
+      overflow-x: hidden;
+      margin-left: 17rem;
+      text-shadow: 3px 3px #72b2cf9a;
+      font-weight: 700;
+      font-size: 2rem;
+      margin-bottom: 0;
+      transition-delay: 1s;
+      transition: all 0.3s;
+      -webkit-animation: tracking-in-expand 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+      animation: tracking-in-expand 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+    }
+  }
+  
+  @-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+  
+    40% {
+      opacity: 0.6;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+  
+    40% {
+      opacity: 0.6;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
