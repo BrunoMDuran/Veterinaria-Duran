@@ -19,7 +19,7 @@ footer{
 /*   color de fondo  */
 
 body{
-    background-color: rgb(213, 233, 241);
+    background-color: #d5e9f1;
 }
 
 /* inicio/Portada */
@@ -841,7 +841,6 @@ button, input, select, textarea {
 
 @media screen and (max-width: 1800px) {
     .html{
- 
         max-width: 1800px;
     }
 
@@ -943,8 +942,7 @@ button, input, select, textarea {
 
 @media screen and (max-width: 992px) {
     .custom-bar{
-
-       background-color: #589BB8;
+        background-color: #589BB8;
         width: 100%;
         height: 100%;
         justify-content: center;
@@ -1039,28 +1037,6 @@ button, input, select, textarea {
         padding-inline: 1.75rem;
     }
 
-    .tarjeta-productos{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(12 1fr);
-        grid-template-areas:
-        "prod12 prod12"
-        "prod12 prod12"
-        "prod1  prod1"
-        "prod1  prod1"
-        "prod10 prod10"
-        "prod10 prod10"
-        "prod6  prod7"
-        "prod2  prod3"
-        "prod4  prod5"
-        "prod8  prod9"
-        "prod11 prod11"
-        "prod11 prod11"
-        ;
-    }
-
-    .titulo-prod{
-        font-size: 1.25rem;
-    }
 } 
 
 @media screen and (max-width: 480px) {
@@ -1098,31 +1074,9 @@ button, input, select, textarea {
         width: 30px;
     }
 
-    .encabezado{
-        flex-direction: column;
-    }
-
     .logo-imagen{
         margin:inherit;
         width: 100px;
-    }
-
-    .redes-list{
-        flex-direction: row;
-    }
-
-    .titulo-pagina{
-        justify-content: center;
-    }
-    
-    .titulo-pagina h2{
-        margin-left: inherit;
-    }
-
-
-    .contenido{
-        width: 100%;
-        margin: inherit;
     }
 
     .tarjeta-grid{

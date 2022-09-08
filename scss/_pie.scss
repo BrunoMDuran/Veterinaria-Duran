@@ -1,3 +1,8 @@
+@mixin anchoAlto ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
 .pie{
     display: flex;
     background-color: #39667e;
@@ -9,4 +14,54 @@
         align-items: center;
         justify-content: center;
     }
+    .grid-pie{
+        .row{
+            .leyenda{
+                color: $text-color;
+                p{
+                    font-size: 1.25rem;
+                }
+            }
+
+            .col-lg-4{
+                iframe{
+                    @include anchoAlto (350px, 150px);
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
 }
+
+.logo-pie{
+    img{
+        width:20rem;
+    }
+}
+
+
+.redes-pie{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: inherit;
+    padding-right: 1rem;
+    @extend %iconos;
+}
+
+$redes: ( 
+    instagram: #d35b9d,
+    facebook: rgb(73, 73, 214),
+    whatsapp: rgb(88, 189, 88)
+);
+
+@each $redsocial, $color-redes in $redes {
+    .bi-#{$redsocial}:hover {
+        color: $color-redes;
+        transition: all 0.3s;
+    }
+}
+
+
+

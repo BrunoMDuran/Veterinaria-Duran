@@ -1,3 +1,4 @@
+
 .encabezado {
     background-color: $main-color;
     height: 4.4rem;
@@ -80,10 +81,12 @@
     padding-left: inherit;
     padding-right: inherit;
   
-    a:hover {
-      background-color: $nav;
-      color: $navbar-alternate;
-      transition: all 0.5s;
-      padding-inline: 2rem !important;
+    a{
+      &:hover{ 
+        background-color: $navbar-hover;
+        color: $navbar-alternate;
+        transition: all 0.5s;
+        padding-inline: 2rem !important;
+      }
     }
   }

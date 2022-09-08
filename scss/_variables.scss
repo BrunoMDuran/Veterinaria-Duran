@@ -1,6 +1,18 @@
 $main-color:#3785a7c9;
 $navbar-text-color: #bdd8e4;
+$text-color:#bdd8e4;
 $navbar-hover:#99c0d1;
 $navbar-alternate: #4d71a7;
 $navbar-contacto:#f3b276;
 $navbar-contacto-hover:#f3b276de;
+$background-container: #d5e9f1;
+%iconos{
+    a{
+        color: rgb(189, 216, 228);
+    }
+    .redes-item-pie{
+        a{
+            i{font-size: 6rem;}
+        }
+    }
+};
