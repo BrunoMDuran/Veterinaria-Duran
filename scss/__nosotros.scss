@@ -1,0 +1,55 @@
+.contenido-flex-nos{
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+        .nosotros{
+            padding-top: 5px;
+            .tarjeta-nosotros{
+                background-color: rgba(255, 255, 255, 0.15);
+                width: 100%;
+                gap: 1rem;
+                flex: 1;
+                .imagen{
+                    .img-nos{
+                            width: 100%;
+                    }
+                }
+                .titulo-nosotros{
+                    color: rgb(59, 86, 126);
+                    padding: 1rem 4rem;
+                    display: flex;
+                    text-align: justify;
+                    justify-content: center;
+                    align-items: center;
+                    line-height: 2.5rem;
+                    transition: all 1s;
+                }
+            }
+        }
+}
+
+.veterinario{
+    background-color: $background-contenido;
+    .img-vet{
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 20rem;
+            border-radius: 50%;
+        }
+        h4{
+            color: $background-pie;
+        }
+    }
+    .text-vet{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 12rem;
+        color: $background-pie;
+        h2{
+            line-height: 3rem;
+        }
+    }
+}
+

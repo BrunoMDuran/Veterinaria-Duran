@@ -5,9 +5,9 @@
 
 .pie{
     display: flex;
-    background-color: #39667e;
+    background-color: $background-pie;
     h6{
-        color: #fff;
+        color: $blanco;
         margin: 10px;
         padding: 10px;
         font-size: 0.75rem;
@@ -25,7 +25,7 @@
 
             .col-lg-4{
                 iframe{
-                    @include anchoAlto (350px, 150px);
+                    @include anchoAlto (420px, 160px);
                     border-radius: 20px;
                 }
             }
@@ -48,6 +48,14 @@
     padding: inherit;
     padding-right: 1rem;
     @extend %iconos;
+    .redes-item-pie{
+        a{
+            text-decoration: none;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
 
 $redes: ( 

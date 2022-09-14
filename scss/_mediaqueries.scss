@@ -39,6 +39,22 @@
         max-width: 1024px;
     }
 
+    body{
+        max-width: 1024px;
+    }
+
+    .top{
+        width:1024px;
+        .top-content{
+            width: 100%;
+            font-size: 0.85rem;
+            .top-logo{
+                margin-top: 20px;
+                width: 350px;
+            }
+        }
+    } 
+
     .titulo-pagina{
         justify-content: center;
         h2{
@@ -57,7 +73,7 @@
     }
 
     .caja-formulario{
-        width: 45rem;
+        width: 25rem;
         margin-right:inherit;
     }
 
@@ -89,6 +105,27 @@
         max-width: 768px;
     }
 
+    .top{
+        .top-content{
+            width: 100%;
+            font-size: 0.75rem;
+            h1{
+                width: fit-content;
+                margin: 20px;
+                color: #fff;
+            }
+            .top-logo{
+                margin-top: 20px;
+                width: 300px;
+            }
+            a{
+                .scroll{
+                    width: 30px;
+                }
+            }
+        }
+    }
+
     .navbarra{
         gap: inherit;
     }
@@ -107,8 +144,43 @@
         margin: inherit;
     }
 
+    .tarjeta-grid{
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: repeat(3 1fr) ;
+        grid-template-areas: 
+        "t1 t2"
+        "t3 t4"
+        "t5 t6"
+        ;
+        align-items: center;
+        justify-content: center;
+        row-gap: 2rem;
+        flex: 1;
+        .linea {   
+            h3{
+            font-size: 1rem;
+            }
+        }
+    }
+
     .prod{
         border-radius: 0;
+    }
+
+    .caja-formulario{
+        width: 35rem;
+        margin-right:inherit;
+    }
+
+    .tarjeta-nosotros{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titulo-nosotros{
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        padding-inline: 1.75rem;
     }
 
 }
@@ -126,6 +198,122 @@
         margin:inherit;
         width: 100px;
     }
+
+    .top{
+        height: 100vh;
+        background-image: url(../img/vete-desenfocada.jpg);
+        background-repeat: no-repeat;
+        h1{
+            width: fit-content;
+            margin: 20px;
+            color: #fff;
+        }
+        .top-content{
+            a{
+                .scroll{
+                    width: 30px;
+                }
+            }
+            width: 100%;
+            font-size: 0.5rem;
+            .top-logo{
+                margin-top: 20px;
+                width: 200px;
+            }
+        }
+    } 
+
+    .tarjeta-grid{
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(6 1fr) ;
+        grid-template-areas: 
+        "t1"
+        "t2"
+        "t3"
+        "t4"
+        "t5"
+        "t6"
+        ;
+        align-items: center;
+        justify-content: center;
+        row-gap: 2rem;
+        flex: 1;
+        .ver{
+            margin: inherit;
+            padding: 5px;
+            margin-right: 10px;
+        }
+        .tarjeta{
+            height: 18rem;
+            margin-top: inherit;
+            flex: 1;
+            .linea{
+                justify-content: space-between;
+                align-items: center;
+            }
+            .titulo-tarjeta{
+                color: #fff;
+                text-align: center;
+                .linea {
+                    h3{
+                    margin-left:10px ;
+                }
+            }
+            }
+        }
+        .t6{
+            align-items: flex-end;
+            .linea{
+                font-size: inherit;
+            }
+        }
+    }
+
+    .formulario{
+        flex-direction: column;
+        .text-form{
+            font-size: 1rem;
+            padding-bottom: 1rem;
+            margin-left: inherit;
+            width: 100%;
+        }
+        form{
+            .caja-formulario{
+                width: 25rem;
+                margin-right:inherit;
+                .grid-form{
+                    grid-template-areas:
+                    "nombre     consulta"
+                    "email      consulta"
+                    "telefono   consulta "
+                    "tcons      enviar"
+                    ;
+                    row-gap: 5px;
+                    .form-item {
+                            input,
+                            select,
+                            textarea{
+                            padding: 0.25rem;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .tarjeta-productos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tarjeta-servicios{
+        display: flex;
+        flex-direction: column;
+        gap: 1rems;
+        border-radius: inherit;
+    }
+
+
 
 
 }

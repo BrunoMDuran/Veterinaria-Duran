@@ -264,7 +264,6 @@ body{
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    
     flex: 1;
 }
 
@@ -500,52 +499,8 @@ button, input, select, textarea {
 .tarjeta-nosotros{
     background-color: rgba(255, 255, 255, 0.082);
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-
-    grid-template-areas: 
-    "imagen-a   linea-a"
-    "linea-b    imagen-b"
-    "imagen-c   linea-c"
-    "linea-d    imagen-d"
-    ;
-    align-items: center;
-    justify-content: center;
     gap: 1rem;
     flex: 1;
-}
-
-.imagen-a{
-    grid-area: imagen-a;
-}
-
-.imagen-b{
-    grid-area: imagen-b;
-}
-
-.linea-a{
-    grid-area: linea-a;
-}
-
-.linea-b{
-    grid-area: linea-b;
-}
-
-.imagen-c{
-    grid-area: imagen-c;
-}
-
-.imagen-d{
-    grid-area: imagen-d;
-}
-
-.linea-c{
-    grid-area: linea-c;
-}
-
-.linea-d{
-    grid-area: linea-d;
 }
 
 .img-nosotros-a,
@@ -617,15 +572,6 @@ button, input, select, textarea {
 .tarjeta-servicios{
     width: 100%;
     background-color: #78aacc;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-
-    grid-template-areas: 
-    "imagen-a   linea-a"
-    "linea-b    imagen-b";
-    align-items: center;
-    justify-content: center;
     gap: 1rems;
     -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -638,36 +584,11 @@ button, input, select, textarea {
     line-height: 2rem;
 }
 
-
-.titulo-servicios{
-    color: #fff;
-    text-align: justify;
-}
-
-.imagen-a-servicios{
-    grid-area: imagen-a;
-}
-
-.imagen-b-servicios{
-    grid-area: imagen-b;
-}
-
-.linea-a-servicios{
-    grid-area: linea-a;
-    border-top-right-radius: 5px;
-}
-
-.linea-b-servicios{
-    grid-area: linea-b;
-    border-bottom-left-radius: 5px;
-}
-
 .img-servicios-a,
 .img-servicios-b{
     width: 100%;
     border-radius: 15px;
     padding: 0.5rem;
-
 }
 
 .titulo-servicios{
@@ -738,23 +659,12 @@ button, input, select, textarea {
     }
   }
 
-.redes-contacto{
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color:#39667e;
-    transition: all 0.3s;
-    -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-
-}
-
 .acordion{
     background-color: inherit;
     background-color: #39667e;
     color: #fff;
     border: inherit;
-    border-radius: 0;
+    border-radius: 0 !important;
 }
 
 .acordion-font{
@@ -789,38 +699,6 @@ button, input, select, textarea {
       opacity: 1;
     }
   }
-  
-
-.redes-contacto li{
-    list-style: none;
-}
-
-.redes-list-contacto{
-    justify-content: space-around;
-    align-items: center;
-    display: flex;
-}
-
-.redes-item-contacto a{
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-}
-
-.redes-item-contacto{
-    padding:40px;
-    text-align: center;
-}
-
-.redes-item-contacto a:hover{
-    color: #5E94B7;
-    transition: all 0.3s;
-}
-
-.redes-item-contacto i{
-    font-size: 100px;
-}
-
 
 /* Pie de pagina */
 

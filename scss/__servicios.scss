@@ -1,0 +1,28 @@
+.tarjeta-servicios{
+    width: 100%;
+    background-color: #78aacc;
+    gap: 1rems;
+    -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        
+            .linea-b-servicios,
+            .linea-a-servicios{
+                padding: 2rem;
+                line-height: 2rem;
+            }
+            .linea-servicios{
+                font-size: 1.25rem;
+                .titulo-servicios{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: justify;
+                    li{
+                        color: #fff;
+                        list-style-type: disc;
+                        line-height: 3rem;
+                    }
+                }
+            }
+}

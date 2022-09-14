@@ -1,0 +1,84 @@
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+
+input, textarea, select{
+    width : 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}  
+
+.formulario{
+    overflow-x: hidden;
+    background-color: #39667e;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .text-form{
+        text-align: center;
+        padding: 2rem 5rem;
+        font-size: 1.25rem;
+    }
+    .form{
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        .caja-formulario{
+            overflow-x: hidden;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            background-color: #62869e;
+            border: none ;
+            padding: 2.5rem;
+            .grid-form{
+                overflow-x: hidden;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(4 1fr);
+                grid-template-areas:
+                "nombre     consulta"
+                "email      consulta"
+                "telefono   consulta "
+                "tcons      enviar"
+                ;
+                gap: 0.75rem;
+                column-gap: 2rem;
+            }
+            .na{
+                grid-area: nombre;
+            }
+            .mail{
+                grid-area: email;
+            }
+            .tel{
+                grid-area: telefono;
+            }
+            .tcons{
+                grid-area: tcons;
+            }
+            .cons{
+                grid-area: consulta;
+            }
+            .env{
+                grid-area: enviar;
+            }
+            .form-item{
+                textarea,
+                select,
+                input{ 
+                padding: 0.5rem;
+                border-radius: 10px;
+                border: none;
+            }
+            }
+        }
+    }
+}  

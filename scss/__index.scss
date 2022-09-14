@@ -1,0 +1,158 @@
+.top{
+    width:100%;
+    max-width: 100%;
+    height: 100vh;
+    background-image: url(../img/vete-desenfocada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .top-content{
+        background-color: rgba(179, 182, 184, 0.308);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        h1{
+            width: 40rem;
+            margin: 1rem;
+            color: #fff;
+            font-size: 2rem;
+        }  
+        .top-logo{
+            margin-top: 1rem;
+            width: 40rem;
+            
+        }
+        a{
+            .scroll{
+                margin-bottom: 10px;
+                width: 3rem;
+            }
+        }
+    }
+}
+
+.animate__shakeY{
+    animation: shakeY;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+.tarjeta-grid{
+    overflow-x: hidden;
+    width: 100%;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-areas: 
+    "t1 t2 t3 t4"
+    "t5 t5 t6 t6"
+    "t5 t5 t6 t6"
+    ;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex: 1;
+        .ver{
+            text-decoration: none;
+            text-align: center;
+            border-radius: 10px;
+            color: #39667e;
+            transition: all 0.3s;
+            flex: 1;
+            .t1,
+            .t2,
+            .t3,
+            .t4{
+                height: 20rem;
+            } 
+            &:hover{
+                transform: scale(1.1);
+                box-shadow: rgba(0, 0, 0, 0.16) 2px 3px 6px, rgba(0, 0, 0, 0.23) 2px 3px 6px;
+            }
+            a{
+                &:visited{
+                    text-decoration: none;
+                    color:#39667e;
+                }
+            }
+        }
+        .tarjeta{
+            overflow-x: hidden;
+            display: flex;
+            background-color: #98b9c9;
+            border-radius: 10px;
+            height: 100%;
+            background-position: center center;
+            background-size: cover;
+            align-items: flex-end;
+            flex: 1;
+        .linea{
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            background: linear-gradient( #5e93b705, #5E94B7 ) ;
+            padding: 100px 5px 10px 5px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            flex: 1;
+            .titulo-tarjeta{
+                color: #fff;
+                text-align: center;
+            }
+            >h3{
+                font-size: 1.5rem;
+                margin-bottom: 0; 
+            }
+        }
+
+    }
+}
+
+.t1{
+    grid-area: t1;
+    background-image: url(../img/perrro-vacuna.jpg);
+}
+
+.t2{
+    grid-area: t2;
+    background-image: url(../img/ectopills.jpg);
+}
+
+.t3{
+    grid-area: t3;
+    background-image: url(../img/image7.jpeg);
+}
+
+.t4{
+    grid-area: t4;
+    background-image: url(../img/mascotas.jpg);
+}
+
+.t5{
+    grid-area: t5;
+    background-image: url(../img/pexels-tima-miroshnichenko-6235241.jpg);
+  
+}
+
+.t6{
+    grid-area: t6;
+    background-image: url(../img/image1.jpeg);
+
+}
+
+.t6,
+.t5 {
+    height: 100%;
+    .linea {
+        > h3{
+        font-size: 2rem;
+        }
+    }
+}
