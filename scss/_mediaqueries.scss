@@ -3,16 +3,6 @@
         max-width: 1800px;
     }
 
-    .titulo-pagina{
-        justify-content:center;
-    }
-    
-    .titulo-pagina { 
-      h2{
-          margin-left: inherit;
-      }
-    }
-
 }
 
 @media screen and (max-width: 1400px) {
@@ -23,6 +13,15 @@
         gap: 18rem;
     }
 
+    .veterinario{
+        .text-vet{
+            padding: 3rem;
+            h2{
+                line-height: 3rem;
+                font-size: 1.75rem;
+            }
+        }
+    }
 }
 @media screen and (max-width: 1145px) {
     .html{
@@ -30,6 +29,25 @@
     }
     .navbarra{
         gap: 10rem;
+    }
+
+    .contenido-flex-nos{
+        .nosotros{
+            .tarjeta-nosotros{
+                .titulo-nosotros{
+                    font-size: 1.2rem;
+                    line-height: 2rem;
+                }
+            }
+        }
+    }
+
+    .titulo-pagina{
+        div{
+            h2{
+                text-align: center;
+            }
+        }
     }
 
 }
@@ -48,19 +66,21 @@
         .top-content{
             width: 100%;
             font-size: 0.85rem;
+            h1{
+                font-size: 1.75rem;
+
+            }
             .top-logo{
                 margin-top: 20px;
                 width: 350px;
             }
+            a{
+                .scroll{
+                    width: 2.5rem;
+                }
+            }
         }
     } 
-
-    .titulo-pagina{
-        justify-content: center;
-        h2{
-            margin-left: inherit;
-        }
-    }
 
     .navbarra{
         gap: inherit;
@@ -77,10 +97,20 @@
         margin-right:inherit;
     }
 
-    .grid-pie{
-        .row{
-            .col-lg-4{
-                text-align: center !important;
+    .pie{
+        .grid-pie{
+            .row{
+                .logo-pie{
+                    img{
+                        width: 17rem
+                    }
+                }
+
+                .col-lg-4{
+                    iframe{
+                        @include anchoAlto (300px, 150px);
+                    }
+                }
             }
         }
     }
@@ -93,6 +123,42 @@
         height: 100%;
         justify-content: center;
         align-items: center;
+    }
+    .pie{
+        .grid-pie{
+            .row{
+                .logo-pie{
+                    img{
+                        width: 22rem
+                    }
+                }
+                .leyenda{
+                    text-align: center !important;
+                    h3{
+                        font-size: 2rem;
+                    }
+                    p{
+                        font-size: 1.75rem;
+                    }
+                }
+                .col-lg-4{
+                    iframe{
+                        @include anchoAlto (600px, 200px);
+                    }
+                }
+            }
+        }
+    }
+    .contenido-flex-nos{
+        .nosotros{
+            .tarjeta-nosotros{
+                .titulo-nosotros{
+                    padding: .75rem 2rem;
+                    font-size: 1rem;
+                    line-height: 1.75rem;
+                }
+            }
+        }
     }
 }
 
@@ -172,17 +238,44 @@
         margin-right:inherit;
     }
 
-    .tarjeta-nosotros{
-        display: flex;
-        flex-direction: column;
+    .contenido-flex-nos{
+        .nosotros{
+            .tarjeta-nosotros{
+                display: flex;
+                flex-direction: column;
+                .titulo-nosotros{
+                    font-size: 1.5rem;
+                    line-height: 2.5rem;
+                    padding-inline: 1.75rem;
+                }
+            }
+        }
     }
 
-    .titulo-nosotros{
-        font-size: 1.5rem;
-        line-height: 2.5rem;
-        padding-inline: 1.75rem;
+    .pie{
+        .grid-pie{
+            .row{
+                .col-lg-4{
+                    iframe{
+                        @include anchoAlto (450px, 200px);
+                    }
+                }
+                .col-lg-12{
+                    .redes-pie{
+                        li{
+                            i{
+                                font-size: 5rem;
+                                h5{
+                                    font-size: 0.9rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-
+    
 }
 
 @media screen and (max-width: 480px) {
@@ -200,25 +293,21 @@
     }
 
     .top{
-        height: 100vh;
-        background-image: url(../img/vete-desenfocada.jpg);
-        background-repeat: no-repeat;
-        h1{
-            width: fit-content;
-            margin: 20px;
-            color: #fff;
-        }
         .top-content{
-            a{
-                .scroll{
-                    width: 30px;
-                }
-            }
             width: 100%;
-            font-size: 0.5rem;
+            font-size: 0.85rem;
+            h1{
+                font-size: 1.35rem;
+
+            }
             .top-logo{
                 margin-top: 20px;
-                width: 200px;
+                width: 225px;
+            }
+            a{
+                .scroll{
+                    width: 1.75rem;
+                }
             }
         }
     } 
@@ -241,7 +330,6 @@
         .ver{
             margin: inherit;
             padding: 5px;
-            margin-right: 10px;
         }
         .tarjeta{
             height: 18rem;
@@ -313,7 +401,46 @@
         border-radius: inherit;
     }
 
-
+    .pie{
+        .grid-pie{
+            .row{
+                padding-bottom: 10px !important;
+                .col-lg-4{
+                    iframe{
+                        @include anchoAlto (300px, 200px);
+                    }
+                }
+                .leyenda{
+                    text-align: center !important;
+                    padding-bottom: 10px ;
+                    h3{
+                        font-size: 1.5rem;
+                    }
+                    p{
+                        font-size: 1.05rem;
+                        &:last-child{
+                            margin-bottom: none !important;
+                        }
+                        
+                    }
+                }
+                .col-lg-12{
+                    .redes-pie{
+                        padding-top: 10px;
+                        flex-direction: column;
+                        li{
+                            i{
+                                font-size: 7rem;
+                                h5{
+                                    font-size: 1.2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 
 }

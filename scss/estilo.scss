@@ -1,15 +1,20 @@
 @import "./reset";
+@import "./_general";
 @import "./variables";
 @import "./header";
 @import "./redes";
 @import "./titulo"; 
-@import "./containers";  
-@import "./productos";
+@import "./containers";
 @import "./pie";
-@import "./mediaqueries";
+@import "./_formulario";
 @import "./_index";
-@import "./_general";
 @import "./_nosotros";
+@import "./productos";
 @import "./_servicios";
 @import "./_contacto";
-@import "./_formulario";
+@import "./mediaqueries";
+
+
+
+
+

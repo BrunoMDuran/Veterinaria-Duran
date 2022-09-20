@@ -37,7 +37,8 @@
             width: 20rem;
             border-radius: 50%;
         }
-        h4{
+        h4,
+        h2{
             color: $background-pie;
         }
     }
@@ -45,9 +46,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-right: 12rem;
+       
         color: $background-pie;
         h2{
+            line-height: 3rem;
+        }
+        h4{
             line-height: 3rem;
         }
     }

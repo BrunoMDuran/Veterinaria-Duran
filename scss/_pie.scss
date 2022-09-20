@@ -4,6 +4,9 @@
 }
 
 .pie{
+    hr{
+        color: $blanco;
+    }
     display: flex;
     background-color: $background-pie;
     h6{
@@ -16,6 +19,11 @@
     }
     .grid-pie{
         .row{
+            .logo-pie{
+                img{
+                    width:20rem;
+                }
+            }
             .leyenda{
                 color: $text-color;
                 p{
@@ -33,11 +41,7 @@
     }
 }
 
-.logo-pie{
-    img{
-        width:20rem;
-    }
-}
+
 
 
 .redes-pie{
