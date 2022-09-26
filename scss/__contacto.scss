@@ -1,66 +1,68 @@
-.contacto{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    .mapa{
-        background: linear-gradient(#bdd8e4 ,#39667e);
-        padding: 20px;
-        width: 100%;
-        height: 700px;
-        -webkit-animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-                animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-                animation-delay: 0.25s;
-                transition: all 0.3s;
-    }
-    .container-xl{
-        .acordion{
-            background-color: inherit;
-            background-color: #39667e;
-            color: #fff;
-            border: inherit;
-            border-radius: 0 !important;
-            .acordion-collapse{
-                .acordion-font{
-                    font-size: 2rem;
+.contenido-flex{
+        .contacto{
+                .formulario{
+                        .grid-form{
+                                padding: 1rem;
+                                margin-bottom: 5rem;
+                                background-color: #39667ea6;
+                                padding: 2.75rem;
+                                border-radius: 1rem;
+                                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+                                position: relative;
+                                .form-item{
+                                        flex: 1;
+                                        input,
+                                        textarea{
+                                                color: $background-pie;
+                                                padding:1rem;
+                                                
+                                        }
+                                        select{
+                                                padding:1.208rem;
+                                        }
+                                }
+
+                        }
                 }
-            }
-        }
-        .accordion-border{
-            border-radius: 0;
-        }
+                .acordion{
+                        border-radius: 5rem;
+                        .accordion{
+                                border-radius: 2rem;
+                                width: 540px;
+                                padding: 1rem;
+                                background-color: #fff;
+                                position: absolute;
+                                bottom: 11rem;
+                                right: 21.5rem;
+                                box-shadow: rgba(14, 30, 37, 0.171) 0px 2px 8px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;                              
+                                
+                               .accordion-item{
+                                .accordion-header{
+                                        button{
+                                                border-radius: 2rem;
+                                                &:not(.collapsed){
+                                                        border: #fff;
+                                                        background-color: $blanco;
+                                                }
+                                                border: none;
+                                                font-size: 1.25rem;
+                                        }
+                                        padding:0.5rem .25rem;
+                                }
+                                .accordion-body{
+                                        p{
+                                                font-size: 1.25rem;
 
-    }
+                                        }
+                                }
+                               
+                                color: $background-pie;
+                                .accordion-button{
+                                        color: $background-pie;
+                                }
+                               }
+                        }
+                }
+        }
+        
 }
-
-@-webkit-keyframes swing-in-top-fwd {
-    0% {
-      -webkit-transform: rotateX(-100deg);
-              transform: rotateX(-100deg);
-      -webkit-transform-origin: top;
-              transform-origin: top;
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: rotateX(0deg);
-              transform: rotateX(0deg);
-      -webkit-transform-origin: top;
-              transform-origin: top;
-      opacity: 1;
-    }
-  }
-  @keyframes swing-in-top-fwd {
-    0% {
-      -webkit-transform: rotateX(-100deg);
-              transform: rotateX(-100deg);
-      -webkit-transform-origin: top;
-              transform-origin: top;
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: rotateX(0deg);
-              transform: rotateX(0deg);
-      -webkit-transform-origin: top;
-              transform-origin: top;
-      opacity: 1;
-    }
-  }

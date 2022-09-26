@@ -1,28 +1,38 @@
-.tarjeta-servicios{
-    width: 100%;
-    background-color: #78aacc;
-    gap: 1rems;
-    -webkit-animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        
-            .linea-b-servicios,
-            .linea-a-servicios{
-                padding: 2rem;
-                line-height: 2rem;
+
+.bg-foto{
+    background-image: url(../img/analisis-desenfocado.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    h2{
+        line-height: 3.5rem;
+        padding: 10rem 5rem;
+        color: #fff;
+        font-weight: 800;
+        background: rgb(0,0,0);
+        background: radial-gradient(circle, rgba(0,0,0,0.5858718487394958) 0%, rgba(0,0,0,0.5214460784313726) 35%, rgba(0,0,0,0.12648809523809523) 100%);
+        margin-bottom: 0;
+    }
+}
+
+.contenido-flex{
+    .contenido-serv{
+        .card{
+            background-color:#39667e9a;
+            border: none;
+            .card-body{
+                justify-content: center;
+                align-items: center;
             }
-            .linea-servicios{
-                font-size: 1.25rem;
-                .titulo-servicios{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    text-align: justify;
-                    li{
-                        color: #fff;
-                        list-style-type: disc;
-                        line-height: 3rem;
-                    }
-                }
+            .card-title,
+            .card-text{
+                color: #fff;
             }
+           &:hover{
+             transform: inherit;
+             box-shadow: none;
+           }
+        }
+    }
 }

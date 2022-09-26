@@ -2,6 +2,46 @@
     .html{
         max-width: 1800px;
     }
+.contenido-flex{
+    .contacto{
+        .acordion{
+            .accordion{
+                bottom: 11rem;
+                right: 18rem;
+            }
+
+        }
+    }
+}
+
+}
+
+@media screen and (max-width: 1700px) {
+    .contenido-flex{
+        .contacto{
+            .acordion{
+                .accordion{
+                    bottom: 11rem;
+                    right: 11rem;
+                }
+    
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .contenido-flex{
+        .contacto{
+            .acordion{
+                .accordion{
+                    bottom: 11rem;
+                    right: 10rem;
+                }
+    
+            }
+        }
+    }
 
 }
 
@@ -22,6 +62,45 @@
             }
         }
     }
+
+    .contenido-flex{
+        .contacto{
+            margin-bottom: 1rem;
+                .formulario{
+                        .grid-form{
+                            border-radius: 2rem;
+                            box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+                            margin-bottom: 0;
+                            height: 550px;
+                            .form-item{
+                             padding:0.2rem;
+                            }
+                        }
+                }
+                .acordion{
+                    .accordion{
+                        box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+                        height: 550px;
+                            width: 100%;
+                            padding: 1rem;
+                            position: inherit;
+                           .accordion-item{
+                            .accordion-header{
+                                margin-bottom: 2.1rem;
+                                    padding:0.25rem .15rem;
+                            }
+                            .accordion-body{
+                                padding: 0;                           
+                            }
+                           }
+                    }
+            } 
+        }
+        
+}
+}
+@media screen and (max-width: 1285px){
+    
 }
 @media screen and (max-width: 1145px) {
     .html{
@@ -49,6 +128,8 @@
             }
         }
     }
+
+
 
 }
 
@@ -160,6 +241,30 @@
             }
         }
     }
+
+    .bg-foto{
+        h2{
+            padding: 6rem 3rem;
+        }
+    }
+
+    .contenido-flex{
+        .contacto{
+                .formulario{
+                        .grid-form{
+                            border-bottom-left-radius:0 ;
+                            border-bottom-right-radius:0 ;
+                            }
+                        }
+                .acordion{
+                        .accordion{
+                            border-top-left-radius:0 ;
+                            border-top-right-radius:0 ;
+                                }
+                        }
+                }
+                
+        }
 }
 
 @media screen and (max-width: 768px) {
@@ -276,6 +381,27 @@
         }
     }
     
+    .bg-foto{
+        h2{
+            padding: 4rem 2rem;
+        }
+    }
+
+    .contenido-flex{
+        .contacto{
+                .formulario{
+                        .grid-form{
+                            height: 100%;
+                            }
+                        }
+                .acordion{
+                        .accordion{
+                            height: 100%;
+                                }
+                        }
+                }
+                
+        }
 }
 
 @media screen and (max-width: 480px) {
@@ -289,7 +415,7 @@
 
     .logo-imagen{
         margin:inherit;
-        width: 100px;
+        
     }
 
     .top{
@@ -442,5 +568,11 @@
         }
     }
 
+    .bg-foto{
+        h2{
+            padding: 3.5rem 1rem;
+            line-height: 3rem;
+        }
+    }
 
 }
