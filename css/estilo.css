@@ -493,13 +493,17 @@ input, textarea, select {
     box-shadow: none; }
 
 .contenido-flex .contacto .formulario .grid-form {
-  padding: 1rem;
   margin-bottom: 5rem;
   background-color: #39667ea6;
-  padding: 2.75rem;
+  padding: 1.5rem 3rem 3rem 3rem;
   border-radius: 1rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   position: relative; }
+  .contenido-flex .contacto .formulario .grid-form h3 {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 0.75rem;
+    font-size: 2rem; }
   .contenido-flex .contacto .formulario .grid-form .form-item {
     flex: 1; }
     .contenido-flex .contacto .formulario .grid-form .form-item input,
@@ -517,7 +521,7 @@ input, textarea, select {
     padding: 1rem;
     background-color: #fff;
     position: absolute;
-    bottom: 11rem;
+    bottom: 8.5rem;
     right: 21.5rem;
     box-shadow: rgba(14, 30, 37, 0.171) 0px 2px 8px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; }
     .contenido-flex .contacto .acordion .accordion .accordion-item {
@@ -540,17 +544,14 @@ input, textarea, select {
   .html {
     max-width: 1800px; }
   .contenido-flex .contacto .acordion .accordion {
-    bottom: 11rem;
     right: 18rem; } }
 
 @media screen and (max-width: 1700px) {
   .contenido-flex .contacto .acordion .accordion {
-    bottom: 11rem;
     right: 11rem; } }
 
 @media screen and (max-width: 1550px) {
   .contenido-flex .contacto .acordion .accordion {
-    bottom: 11rem;
     right: 10rem; } }
 
 @media screen and (max-width: 1400px) {
@@ -565,24 +566,33 @@ input, textarea, select {
       font-size: 1.75rem; }
   .contenido-flex .contacto {
     margin-bottom: 1rem; }
-    .contenido-flex .contacto .formulario .grid-form {
-      border-radius: 2rem;
-      box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
-      margin-bottom: 0;
-      height: 550px; }
-      .contenido-flex .contacto .formulario .grid-form .form-item {
-        padding: 0.2rem; }
-    .contenido-flex .contacto .acordion .accordion {
-      box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
-      height: 550px;
-      width: 100%;
-      padding: 1rem;
-      position: inherit; }
-      .contenido-flex .contacto .acordion .accordion .accordion-item .accordion-header {
-        margin-bottom: 2.1rem;
-        padding: 0.25rem .15rem; }
-      .contenido-flex .contacto .acordion .accordion .accordion-item .accordion-body {
-        padding: 0; } }
+    .contenido-flex .contacto .formulario {
+      padding: 0 0 0 1rem; }
+      .contenido-flex .contacto .formulario .grid-form {
+        border-right: solid 0.4rem #f3b276;
+        border-radius: 2rem;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+        margin-bottom: 0;
+        height: 100%; }
+        .contenido-flex .contacto .formulario .grid-form .form-item {
+          padding: 0.2rem; }
+    .contenido-flex .contacto .acordion {
+      padding: 0 1rem 0 0; }
+      .contenido-flex .contacto .acordion .accordion {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+        height: 100%;
+        width: 100%;
+        padding: 1rem;
+        position: inherit; }
+        .contenido-flex .contacto .acordion .accordion .accordion-item .accordion-header {
+          margin-bottom: 2.1rem;
+          padding: 0.25rem .15rem; }
+        .contenido-flex .contacto .acordion .accordion .accordion-item .accordion-body {
+          padding: 0; } }
 
 @media screen and (max-width: 1145px) {
   .html {
@@ -651,12 +661,22 @@ input, textarea, select {
     line-height: 1.75rem; }
   .bg-foto h2 {
     padding: 6rem 3rem; }
-  .contenido-flex .contacto .formulario .grid-form {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0; }
-  .contenido-flex .contacto .acordion .accordion {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0; } }
+  .contenido-flex .contacto {
+    padding-block: 1rem !important; }
+    .contenido-flex .contacto .formulario {
+      padding: 1rem 1rem 0 1rem; }
+      .contenido-flex .contacto .formulario .grid-form {
+        border: none;
+        border-bottom: solid 0.4rem #f3b276;
+        border-radius: 2rem;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0; }
+    .contenido-flex .contacto .acordion {
+      padding: 0 1rem; }
+      .contenido-flex .contacto .acordion .accordion {
+        border-radius: 2rem;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0; } }
 
 @media screen and (max-width: 768px) {
   .html {
@@ -717,7 +737,10 @@ input, textarea, select {
   .bg-foto h2 {
     padding: 4rem 2rem; }
   .contenido-flex .contacto .formulario .grid-form {
+    padding: 2rem;
     height: 100%; }
+    .contenido-flex .contacto .formulario .grid-form h3 {
+      padding-top: 0; }
   .contenido-flex .contacto .acordion .accordion {
     height: 100%; } }
 

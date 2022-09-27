@@ -6,7 +6,6 @@
     .contacto{
         .acordion{
             .accordion{
-                bottom: 11rem;
                 right: 18rem;
             }
 
@@ -21,7 +20,6 @@
         .contacto{
             .acordion{
                 .accordion{
-                    bottom: 11rem;
                     right: 11rem;
                 }
     
@@ -35,7 +33,6 @@
         .contacto{
             .acordion{
                 .accordion{
-                    bottom: 11rem;
                     right: 10rem;
                 }
     
@@ -67,20 +64,27 @@
         .contacto{
             margin-bottom: 1rem;
                 .formulario{
+                    padding: 0 0 0 1rem;
                         .grid-form{
+                            border-right: solid 0.4rem $navbar-contacto;
                             border-radius: 2rem;
+                            border-top-right-radius: 0;
+                            border-bottom-right-radius: 0;
                             box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
                             margin-bottom: 0;
-                            height: 550px;
+                            height: 100%;
                             .form-item{
                              padding:0.2rem;
                             }
                         }
                 }
                 .acordion{
+                    padding: 0 1rem 0 0 ;
                     .accordion{
+                        border-top-left-radius: 0;
+                        border-bottom-left-radius: 0;
                         box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
-                        height: 550px;
+                        height: 100%;
                             width: 100%;
                             padding: 1rem;
                             position: inherit;
@@ -250,14 +254,21 @@
 
     .contenido-flex{
         .contacto{
+            padding-block: 1rem !important;
                 .formulario{
+                    padding: 1rem 1rem 0 1rem;
                         .grid-form{
+                            border: none;
+                            border-bottom: solid 0.4rem $navbar-contacto;
+                            border-radius: 2rem;
                             border-bottom-left-radius:0 ;
                             border-bottom-right-radius:0 ;
                             }
                         }
                 .acordion{
+                    padding: 0 1rem;
                         .accordion{
+                            border-radius: 2rem;
                             border-top-left-radius:0 ;
                             border-top-right-radius:0 ;
                                 }
@@ -391,6 +402,10 @@
         .contacto{
                 .formulario{
                         .grid-form{
+                            h3{
+                                padding-top: 0;
+                            }
+                            padding: 2rem;
                             height: 100%;
                             }
                         }

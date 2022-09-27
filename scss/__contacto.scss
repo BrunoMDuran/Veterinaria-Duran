@@ -2,13 +2,18 @@
         .contacto{
                 .formulario{
                         .grid-form{
-                                padding: 1rem;
                                 margin-bottom: 5rem;
                                 background-color: #39667ea6;
-                                padding: 2.75rem;
+                                padding: 1.5rem 3rem 3rem 3rem;
                                 border-radius: 1rem;
                                 box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
                                 position: relative;
+                                h3{
+                                        color: $blanco;
+                                        text-align: center;
+                                        padding-bottom: 0.75rem;
+                                        font-size: 2rem;
+                                }
                                 .form-item{
                                         flex: 1;
                                         input,
@@ -32,7 +37,7 @@
                                 padding: 1rem;
                                 background-color: #fff;
                                 position: absolute;
-                                bottom: 11rem;
+                                bottom: 8.5rem;
                                 right: 21.5rem;
                                 box-shadow: rgba(14, 30, 37, 0.171) 0px 2px 8px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;                              
                                 
