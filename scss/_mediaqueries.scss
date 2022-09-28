@@ -66,7 +66,7 @@
                 .formulario{
                     padding: 0 0 0 1rem;
                         .grid-form{
-                            border-right: solid 0.4rem $navbar-contacto;
+                           
                             border-radius: 2rem;
                             border-top-right-radius: 0;
                             border-bottom-right-radius: 0;
@@ -259,7 +259,7 @@
                     padding: 1rem 1rem 0 1rem;
                         .grid-form{
                             border: none;
-                            border-bottom: solid 0.4rem $navbar-contacto;
+                            
                             border-radius: 2rem;
                             border-bottom-left-radius:0 ;
                             border-bottom-right-radius:0 ;
@@ -332,12 +332,16 @@
         grid-template-areas: 
         "t1 t2"
         "t3 t4"
-        "t5 t6"
+        "t5 t5"
+        "t6 t6"
         ;
         align-items: center;
         justify-content: center;
         row-gap: 2rem;
         flex: 1;
+        .tarjeta{
+            height: 20rem;
+        }
         .linea {   
             h3{
             font-size: 1rem;
@@ -477,7 +481,7 @@
             margin-top: inherit;
             flex: 1;
             .linea{
-                justify-content: space-between;
+                justify-content: center;
                 align-items: center;
             }
             .titulo-tarjeta{

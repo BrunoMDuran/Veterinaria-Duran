@@ -31,11 +31,13 @@
                 }
                 .acordion{
                         border-radius: 5rem;
+                       
                         .accordion{
+                                border: solid $navbar-contacto 4px;
                                 border-radius: 2rem;
                                 width: 540px;
                                 padding: 1rem;
-                                background-color: #fff;
+                                background-color: $blanco;
                                 position: absolute;
                                 bottom: 8.5rem;
                                 right: 21.5rem;

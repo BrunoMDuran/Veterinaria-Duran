@@ -8,85 +8,93 @@
     position: sticky;
     top: 0;
     z-index: 4;
-  }
-  
-  .logo-imagen {
-    padding: 5px;
-    padding-left: 1rem;
-    width: 150px;
-  }
-  
-  .navbar-collapse {
-    z-index: 4;
-  }
-  
-  .custom-bar {
-    z-index: 4;
-    padding: 0;
-  }
-  
-  .navbar-brand {
-    padding: inherit;
-  }
-  
-  .navbarra {
-    font-size: 1.2rem;
-    font-weight: bold;
-    gap: 25rem;
-  }
-  
-  .menu {
-    li > a {
-      margin-bottom: 0;
-      color: $navbar-text-color;
-      padding: 1.26rem;
-    }
-  
-    align-items: center;
-  }
-  
-  .menu-item {
-    &.dif a {
-      background-color: $navbar-contacto;
-      padding: 1.26rem;
-  
-      &:hover {
-        background-color: $navbar-contacto-hover;
-        transition: all 0.5s;
-        padding-inline: 2rem;
-      }
-    }
-  
-    &.activo {
-      &.dif a {
-        background-color: $navbar-contacto-hover;
-        transition: all 0.5s;
-        padding-inline: 2rem;
-      }
-  
-      a {
-        background-color: $navbar-text-color;
-        color: $navbar-alternate;
-        padding-inline: 2rem !important;
-  
-        &:hover {
-          background-color: $navbar-hover;
-          color: $navbar-alternate;
-          transition: all 0.5s;
-          padding-inline: 2rem !important;
+    .custom-bar {
+      z-index: 4;
+      padding: 0;
+      .navbarra {
+        font-size: 1.2rem;
+        font-weight: bold;
+        gap: 25rem;
+        .navbar-collapse {
+          z-index: 4;
+          .menu {
+            li > a {
+              margin-bottom: 0;
+              color: $navbar-text-color;
+              padding: 1.29rem;
+            }
+          
+            align-items: center;
+
+            .menu-item {
+              &.dif a {
+                background-color: $navbar-contacto !important;
+                padding: 1.29rem;
+            
+                &:hover {
+                  background-color: $navbar-contacto-hover !important;
+                  transition: all 0.5s;
+                  padding-inline: 2rem;
+                }
+              }
+            
+              &.activo {
+                &.dif a {
+                  background-color: $navbar-contacto-hover;
+                  transition: all 0.5s;
+                  padding-inline: 2rem;
+                }
+            
+                a {
+                  background-color: $navbar-text-color;
+                  color: $navbar-alternate;
+                  padding-inline: 2rem !important;
+            
+                  &:hover {
+                    background-color: $navbar-hover;
+                    color: $navbar-alternate;
+                    transition: all 0.5s;
+                    padding-inline: 2rem !important;
+                  }
+                }
+              }
+            
+              padding-left: inherit;
+              padding-right: inherit;
+            
+              a{
+                &:hover{ 
+                  background-color: $navbar-hover;
+                  color: $navbar-alternate;
+                  transition: all 0.5s;
+                  padding-inline: 2rem !important;
+                }
+              }
+            }
+          
+          }
+        }      
+        .navbar-brand {
+          padding: inherit;
+          .logo-imagen {
+            padding: 5px;
+            padding-left: 2rem;
+            width: 160px;
+          }
         }
       }
     }
-  
-    padding-left: inherit;
-    padding-right: inherit;
-  
-    a{
-      &:hover{ 
-        background-color: $navbar-hover;
-        color: $navbar-alternate;
-        transition: all 0.5s;
-        padding-inline: 2rem !important;
-      }
-    }
   }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

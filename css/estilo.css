@@ -36,62 +36,55 @@ body {
   position: sticky;
   top: 0;
   z-index: 4; }
-
-.logo-imagen {
-  padding: 5px;
-  padding-left: 1rem;
-  width: 150px; }
-
-.navbar-collapse {
-  z-index: 4; }
-
-.custom-bar {
-  z-index: 4;
-  padding: 0; }
-
-.navbar-brand {
-  padding: inherit; }
-
-.navbarra {
-  font-size: 1.2rem;
-  font-weight: bold;
-  gap: 25rem; }
-
-.menu {
-  align-items: center; }
-  .menu li > a {
-    margin-bottom: 0;
-    color: #bdd8e4;
-    padding: 1.26rem; }
-
-.menu-item {
-  padding-left: inherit;
-  padding-right: inherit; }
-  .menu-item.dif a {
-    background-color: #f3b276;
-    padding: 1.26rem; }
-    .menu-item.dif a:hover {
-      background-color: #f3b276de;
-      transition: all 0.5s;
-      padding-inline: 2rem; }
-  .menu-item.activo.dif a {
-    background-color: #f3b276de;
-    transition: all 0.5s;
-    padding-inline: 2rem; }
-  .menu-item.activo a {
-    background-color: #bdd8e4;
-    color: #4d71a7;
-    padding-inline: 2rem !important; }
-    .menu-item.activo a:hover {
-      background-color: #99c0d1;
-      color: #4d71a7;
-      transition: all 0.5s;
-      padding-inline: 2rem !important; }
-  .menu-item a:hover {
-    background-color: #99c0d1;
-    color: #4d71a7;
-    transition: all 0.5s;
-    padding-inline: 2rem !important; }
+  .encabezado .custom-bar {
+    z-index: 4;
+    padding: 0; }
+    .encabezado .custom-bar .navbarra {
+      font-size: 1.2rem;
+      font-weight: bold;
+      gap: 25rem; }
+      .encabezado .custom-bar .navbarra .navbar-collapse {
+        z-index: 4; }
+        .encabezado .custom-bar .navbarra .navbar-collapse .menu {
+          align-items: center; }
+          .encabezado .custom-bar .navbarra .navbar-collapse .menu li > a {
+            margin-bottom: 0;
+            color: #bdd8e4;
+            padding: 1.29rem; }
+          .encabezado .custom-bar .navbarra .navbar-collapse .menu .menu-item {
+            padding-left: inherit;
+            padding-right: inherit; }
+            .encabezado .custom-bar .navbarra .navbar-collapse .menu .menu-item.dif a {
+              background-color: #f3b276 !important;
+              padding: 1.29rem; }
+              .encabezado .custom-bar .navbarra .navbar-collapse .menu .menu-item.dif a:hover {
+                background-color: #f0aa6ade !important;
+                transition: all 0.5s;
+                padding-inline: 2rem; }
+            .encabezado .custom-bar .navbarra .navbar-collapse .menu .menu-item.activo.dif a {
+              background-color: #f0aa6ade;
+              transition: all 0.5s;
+              padding-inline: 2rem; }
+            .encabezado .custom-bar .navbarra .navbar-collapse .menu .menu-item.activo a {
+              background-color: #bdd8e4;
+              color: #4d71a7;
+              padding-inline: 2rem !important; }
+              .encabezado .custom-bar .navbarra .navbar-collapse .menu .menu-item.activo a:hover {
+                background-color: #99c0d1;
+                color: #4d71a7;
+                transition: all 0.5s;
+                padding-inline: 2rem !important; }
+            .encabezado .custom-bar .navbarra .navbar-collapse .menu .menu-item a:hover {
+              background-color: #99c0d1;
+              color: #4d71a7;
+              transition: all 0.5s;
+              padding-inline: 2rem !important; }
+      .encabezado .custom-bar .navbarra .navbar-brand {
+        padding: inherit; }
+        .encabezado .custom-bar .navbarra .navbar-brand .logo-imagen {
+          padding: 5px;
+          padding-left: 2rem;
+          width: 160px; }
 
 /* Redes */
 .redes-list {
@@ -516,6 +509,7 @@ input, textarea, select {
 .contenido-flex .contacto .acordion {
   border-radius: 5rem; }
   .contenido-flex .contacto .acordion .accordion {
+    border: solid #f3b276 4px;
     border-radius: 2rem;
     width: 540px;
     padding: 1rem;
@@ -569,7 +563,6 @@ input, textarea, select {
     .contenido-flex .contacto .formulario {
       padding: 0 0 0 1rem; }
       .contenido-flex .contacto .formulario .grid-form {
-        border-right: solid 0.4rem #f3b276;
         border-radius: 2rem;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
@@ -667,7 +660,6 @@ input, textarea, select {
       padding: 1rem 1rem 0 1rem; }
       .contenido-flex .contacto .formulario .grid-form {
         border: none;
-        border-bottom: solid 0.4rem #f3b276;
         border-radius: 2rem;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0; }
@@ -708,11 +700,13 @@ input, textarea, select {
   .tarjeta-grid {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3 1fr);
-    grid-template-areas: "t1 t2" "t3 t4" "t5 t6";
+    grid-template-areas: "t1 t2" "t3 t4" "t5 t5" "t6 t6";
     align-items: center;
     justify-content: center;
     row-gap: 2rem;
     flex: 1; }
+    .tarjeta-grid .tarjeta {
+      height: 20rem; }
     .tarjeta-grid .linea h3 {
       font-size: 1rem; }
   .prod {
@@ -777,7 +771,7 @@ input, textarea, select {
       margin-top: inherit;
       flex: 1; }
       .tarjeta-grid .tarjeta .linea {
-        justify-content: space-between;
+        justify-content: center;
         align-items: center; }
       .tarjeta-grid .tarjeta .titulo-tarjeta {
         color: #fff;
