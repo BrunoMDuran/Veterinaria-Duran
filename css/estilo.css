@@ -184,9 +184,9 @@ body {
   display: flex;
   background-color: #39667e; }
   .pie hr {
-    color: #fff; }
+    color: #ffffff; }
   .pie h6 {
-    color: #fff;
+    color: #ffffff;
     margin: 10px;
     padding: 10px;
     font-size: 0.75rem;
@@ -493,7 +493,7 @@ input, textarea, select {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   position: relative; }
   .contenido-flex .contacto .formulario .grid-form h3 {
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     padding-bottom: 0.75rem;
     font-size: 2rem; }
@@ -513,7 +513,7 @@ input, textarea, select {
     border-radius: 2rem;
     width: 540px;
     padding: 1rem;
-    background-color: #fff;
+    background-color: #ffffff;
     position: absolute;
     bottom: 8.5rem;
     right: 21.5rem;
@@ -528,7 +528,7 @@ input, textarea, select {
           font-size: 1.25rem; }
           .contenido-flex .contacto .acordion .accordion .accordion-item .accordion-header button:not(.collapsed) {
             border: #fff;
-            background-color: #fff; }
+            background-color: #ffffff; }
       .contenido-flex .contacto .acordion .accordion .accordion-item .accordion-body p {
         font-size: 1.25rem; }
       .contenido-flex .contacto .acordion .accordion .accordion-item .accordion-button {
@@ -551,8 +551,8 @@ input, textarea, select {
 @media screen and (max-width: 1400px) {
   .html {
     max-width: 1400px; }
-  .navbarra {
-    gap: 18rem; }
+  .encabezado .custom-bar .navbarra {
+    gap: 12rem; }
   .veterinario .text-vet {
     padding: 3rem; }
     .veterinario .text-vet h2 {
@@ -590,8 +590,8 @@ input, textarea, select {
 @media screen and (max-width: 1145px) {
   .html {
     max-width: 1145px; }
-  .navbarra {
-    gap: 10rem; }
+  .encabezado .custom-bar .navbarra {
+    gap: 2rem; }
   .contenido-flex-nos .nosotros .tarjeta-nosotros .titulo-nosotros {
     font-size: 1.2rem;
     line-height: 2rem; }
@@ -615,7 +615,7 @@ input, textarea, select {
         width: 350px; }
       .top .top-content a .scroll {
         width: 2.5rem; }
-  .navbarra {
+  .encabezado .custom-bar .navbarra {
     gap: inherit;
     width: 100%;
     background-color: #589BB8; }

@@ -46,10 +46,14 @@
     .html{
         max-width: 1400px;
     }
-    .navbarra{
-        gap: 18rem;
+    .encabezado{
+        .custom-bar{
+            .navbarra{
+                gap: 12rem;
+            }
+        }
     }
-
+    
     .veterinario{
         .text-vet{
             padding: 3rem;
@@ -103,15 +107,17 @@
         
 }
 }
-@media screen and (max-width: 1285px){
-    
-}
+
 @media screen and (max-width: 1145px) {
     .html{
         max-width: 1145px;
     }
-    .navbarra{
-        gap: 10rem;
+    .encabezado{
+        .custom-bar{
+            .navbarra{
+                gap: 2rem;
+            }
+        }
     }
 
     .contenido-flex-nos{
@@ -167,10 +173,15 @@
         }
     } 
 
-    .navbarra{
-        gap: inherit;
-        width: 100%;
-        background-color: #589BB8;
+   
+    .encabezado{
+        .custom-bar{
+            .navbarra{
+                gap: inherit;
+                width: 100%;
+                background-color: #589BB8;
+            }
+        }
     }
 
     .redes-list{
