@@ -130,6 +130,11 @@ body {
     transition: all 0.3s;
     -webkit-animation: tracking-in-expand 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
     animation: tracking-in-expand 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
+    .titulo-pagina h2 a button {
+      color: #39667e;
+      font-weight: 700; }
+    .titulo-pagina h2 a:hover {
+      color: #ffffff; }
 
 @-webkit-keyframes tracking-in-expand {
   0% {
@@ -428,7 +433,7 @@ input, textarea, select {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   transition: all 0.3s; }
   .card:hover:hover {
-    transform: scale(1.1); }
+    transform: scale(1.05); }
 
 .ver-mas:hover {
   background-color: #39667e;
@@ -486,6 +491,7 @@ input, textarea, select {
     align-items: center; }
   .contenido-flex .contenido-serv .card .card-title,
   .contenido-flex .contenido-serv .card .card-text {
+    line-height: 3rem;
     color: #fff; }
   .contenido-flex .contenido-serv .card:hover {
     transform: inherit;
@@ -628,6 +634,8 @@ input, textarea, select {
     gap: inherit;
     width: 100%;
     background-color: #589BB8; }
+  .tarjeta-grid .tarjeta .linea h3 {
+    flex-direction: column !important; }
   .redes-list {
     margin-block: 20px; }
   .caja-formulario {
@@ -801,6 +809,9 @@ input, textarea, select {
       align-items: flex-end; }
       .tarjeta-grid .t6 .linea {
         font-size: inherit; }
+  .tarjeta-grid .tarjeta .linea h3 {
+    font-size: 2rem;
+    flex-direction: row !important; }
   .formulario {
     flex-direction: column; }
     .formulario .text-form {
@@ -851,3 +862,6 @@ input, textarea, select {
   .bg-foto h2 {
     padding: 3.5rem 1rem;
     line-height: 3rem; } }
+
+.contenido-flex .contenido .row .imagen-gallery {
+  border-radius: 1rem; }

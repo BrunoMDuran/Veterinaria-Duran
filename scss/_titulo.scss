@@ -23,6 +23,15 @@
       transition: all 0.3s;
       -webkit-animation: tracking-in-expand 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
       animation: tracking-in-expand 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+      a{
+        button{
+          color: $background-pie;
+          font-weight: 700;
+        }
+        &:hover{
+          color: $blanco;
+        }
+      }
     }
   }
   

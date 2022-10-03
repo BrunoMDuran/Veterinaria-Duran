@@ -180,6 +180,7 @@
         }
     } 
 
+
    
     .encabezado{
         .custom-bar{
@@ -190,6 +191,19 @@
             }
         }
     }
+
+    .tarjeta-grid{
+            .tarjeta{
+            .linea{
+                h3{
+                    flex-direction: column !important;
+                }
+            }
+    
+        }
+    }
+
+
 
     .redes-list{
         margin-block: 20px;
@@ -531,7 +545,7 @@
                 color: #fff;
                 text-align: center;
                 .linea {
-                    h3{
+                    h3{  
                     margin-left:10px ;
                 }
             }
@@ -544,6 +558,18 @@
             }
         }
     }
+
+    .tarjeta-grid{
+        .tarjeta{
+        .linea{
+            h3{
+                font-size: 2rem;
+                flex-direction: row!important;
+            }
+        }
+
+    }
+}
 
     .formulario{
         flex-direction: column;
