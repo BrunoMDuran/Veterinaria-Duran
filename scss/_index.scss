@@ -43,6 +43,13 @@
     animation-delay: 1s;
 }
 
+.carousel{
+    .carousel-item{
+        height: 70vh;
+        align-items: center;
+    }
+}
+
 .tarjeta-grid{
     overflow-x: hidden;
     width: 100%;
@@ -116,6 +123,9 @@
                 text-align: center;
                 font-size: 1.5rem;
                 margin-bottom: 0; 
+                .boton{
+                    color: $background-pie;
+                }
             }
         }
 
@@ -124,7 +134,7 @@
 
 .t1{
     grid-area: t1;
-    background-image: url(../img/perrro-vacuna.jpg);
+    background-image: url(../img/laboratorio-2.jpg);
 }
 
 .t2{
@@ -134,7 +144,7 @@
 
 .t3{
     grid-area: t3;
-    background-image: url(../img/image7.jpeg);
+    background-image: url(../img/entrada.jpg);
 }
 
 .t4{
@@ -144,7 +154,7 @@
 
 .t5{
     grid-area: t5;
-    background-image: url(../img/pexels-tima-miroshnichenko-6235241.jpg);
+    background-image: url(../img/image7.jpeg);
   
 }
 

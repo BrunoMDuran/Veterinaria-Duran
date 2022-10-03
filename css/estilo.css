@@ -283,6 +283,10 @@ input, textarea, select {
   animation-iteration-count: infinite;
   animation-delay: 1s; }
 
+.carousel .carousel-item {
+  height: 70vh;
+  align-items: center; }
+
 .tarjeta-grid {
   overflow-x: hidden;
   width: 100%;
@@ -342,10 +346,12 @@ input, textarea, select {
         text-align: center;
         font-size: 1.5rem;
         margin-bottom: 0; }
+        .tarjeta-grid .tarjeta .linea > h3 .boton {
+          color: #39667e; }
 
 .t1 {
   grid-area: t1;
-  background-image: url(../img/perrro-vacuna.jpg); }
+  background-image: url(../img/laboratorio-2.jpg); }
 
 .t2 {
   grid-area: t2;
@@ -353,7 +359,7 @@ input, textarea, select {
 
 .t3 {
   grid-area: t3;
-  background-image: url(../img/image7.jpeg); }
+  background-image: url(../img/entrada.jpg); }
 
 .t4 {
   grid-area: t4;
@@ -361,7 +367,7 @@ input, textarea, select {
 
 .t5 {
   grid-area: t5;
-  background-image: url(../img/pexels-tima-miroshnichenko-6235241.jpg); }
+  background-image: url(../img/image7.jpeg); }
 
 .t6 {
   grid-area: t6;
@@ -515,7 +521,7 @@ input, textarea, select {
     padding: 1rem;
     background-color: #ffffff;
     position: absolute;
-    bottom: 8.5rem;
+    bottom: 10rem;
     right: 21.5rem;
     box-shadow: rgba(14, 30, 37, 0.171) 0px 2px 8px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; }
     .contenido-flex .contacto .acordion .accordion .accordion-item {
@@ -549,6 +555,9 @@ input, textarea, select {
     right: 10rem; } }
 
 @media screen and (max-width: 1400px) {
+  .carousel .carousel-item {
+    height: 100%;
+    align-items: center; }
   .html {
     max-width: 1400px; }
   .encabezado .custom-bar .navbarra {
@@ -631,12 +640,22 @@ input, textarea, select {
     height: 150px; } }
 
 @media screen and (max-width: 992px) {
-  .custom-bar {
+  .navbar-toggler {
+    margin-right: 1rem; }
+  .encabezado .custom-bar {
     background-color: #589BB8;
     width: 100%;
     height: 100%;
     justify-content: center;
     align-items: center; }
+    .encabezado .custom-bar .navbarra .navbar-collapse .menu .menu-item {
+      width: 100%; }
+      .encabezado .custom-bar .navbarra .navbar-collapse .menu .menu-item a {
+        text-align: center; }
+    .encabezado .custom-bar .navbarra .navbar-brand {
+      padding: inherit; }
+      .encabezado .custom-bar .navbarra .navbar-brand .logo-imagen {
+        padding-left: 1rem; }
   .pie .grid-pie .row .logo-pie img {
     width: 22rem; }
   .pie .grid-pie .row .leyenda {
